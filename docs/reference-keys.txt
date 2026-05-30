@@ -251,7 +251,12 @@ shannon-entropy-error
 suggested-learning-path
 next-steps
 key-takeaways-5
-references
+selected-references-and-further-reading
+origin-of-life-and-general-frameworks
+rna-world-and-molecular-evolution
+protocells-and-synthetic-life
+autocatalytic-networks-and-complexity
+prebiotic-chemistry-and-early-earth-environments
 visualizing-population-growth
 the-trade-off-between-openness-and-isolation
 division-and-reproduction
@@ -294,9 +299,3 @@ suggested-readings-4
 reflection-questions-6
 key-takeaways-6
 key-takeaways-7
-origin-of-life-and-general-frameworks
-rna-world-and-molecular-evolution
-protocells-and-synthetic-life
-autocatalytic-networks-and-complexity
-prebiotic-chemistry-and-early-earth-environments
-selected-references-and-further-reading

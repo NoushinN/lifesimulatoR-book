@@ -4,9 +4,6 @@ author: "Noushin Nabavi"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: references.bib
-biblio-style: apalike
-link-citations: true
 description: "A theory-rich companion book for the lifesimulatoR R package."
 output:
   bookdown::gitbook:
