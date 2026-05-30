@@ -1,0 +1,353 @@
+# Appendix B: Classroom Labs and Exploratory Activities
+
+## Purpose of This Appendix
+
+The simulations in `lifesimulatoR` are designed not only to illustrate origin-of-life concepts but also to encourage exploration and scientific thinking.
+
+The activities in this appendix allow students to investigate how changing model parameters influences system behavior. The goal is not to discover the "correct" origin-of-life scenario, but rather to understand how variation, selection, organization, and emergence interact in simplified models.
+
+Each activity follows the scientific method:
+
+1. Form a hypothesis.
+2. Run simulations.
+3. Observe results.
+4. Interpret patterns.
+5. Identify limitations.
+6. Propose improvements.
+
+These exercises can be used in classrooms, workshops, independent study projects, or science communication activities.
+
+## Lab 1: Mutation Rate and Evolutionary Change
+
+### Scientific Background
+
+Mutation introduces novelty into a population.
+
+Without mutation, evolution cannot explore new possibilities. However, excessive mutation may destroy useful information before selection can preserve it.
+
+This creates a classic evolutionary trade-off.
+
+### Goal
+
+Investigate how mutation rate affects molecular evolution.
+
+### Activity
+
+```{r lab-mutation}
+rates <- c(0, 0.01, 0.05, 0.20)
+
+results <- lapply(rates, function(rate) {
+  simulate_abiogenesis(
+    n_molecules = 100,
+    generations = 100,
+    mutation_rate = rate,
+    selection_strength = 1,
+    seed = 123
+  )
+})
+
+names(results) <- paste0("mutation_", rates)
+
+lapply(results, tail)
+```
+
+### Questions
+
+1. Which mutation rate produces the highest fitness?
+2. Which mutation rate produces the highest diversity?
+3. Is there a trade-off between diversity and fitness?
+4. What happens when mutation becomes extremely high?
+5. Can evolution occur without mutation?
+
+### Extension
+
+Try mutation rates above 0.20 and compare the outcomes.
+
+## Lab 2: Selection Strength and Adaptation
+
+### Scientific Background
+
+Selection favors some variants over others.
+
+Stronger selection increases differences among variants, while weaker selection allows more variants to persist.
+
+### Goal
+
+Explore how selection strength influences evolutionary outcomes.
+
+### Activity
+
+```{r lab-selection}
+strengths <- c(0, 0.5, 1, 3)
+
+selection_results <- lapply(strengths, function(s) {
+  simulate_abiogenesis(
+    n_molecules = 100,
+    generations = 100,
+    mutation_rate = 0.02,
+    selection_strength = s,
+    seed = 123
+  )
+})
+
+names(selection_results) <- paste0("selection_", strengths)
+
+lapply(selection_results, tail)
+```
+
+### Questions
+
+1. What happens when selection strength equals zero?
+2. Does stronger selection always increase fitness?
+3. How does diversity change as selection becomes stronger?
+4. Can strong selection reduce exploration of new possibilities?
+
+### Extension
+
+Plot diversity and fitness for each selection strength and compare the trajectories.
+
+## Lab 3: Diversity Versus Selection
+
+### Scientific Background
+
+Mutation generates diversity, while selection often reduces diversity.
+
+Understanding the balance between these forces is a central problem in evolutionary theory.
+
+### Goal
+
+Explore how diversity changes under different levels of selection.
+
+### Activity
+
+```{r lab-diversity-selection}
+strengths <- c(0, 1, 3, 5)
+
+diversity_results <- lapply(strengths, function(s) {
+  simulate_abiogenesis(
+    n_molecules = 100,
+    generations = 100,
+    mutation_rate = 0.02,
+    selection_strength = s,
+    seed = 123
+  )
+})
+
+names(diversity_results) <- paste0("selection_", strengths)
+
+lapply(diversity_results, tail)
+```
+
+### Questions
+
+1. Does strong selection always reduce diversity?
+2. Can diversity remain high while fitness increases?
+3. Why might evolution require both diversity and selection?
+4. Is the most diverse population necessarily the most successful?
+
+### Extension
+
+Calculate diversity through time and compare different selection strengths.
+
+## Lab 4: Protocell Leakage and Compartment Stability
+
+### Scientific Background
+
+Early compartments likely faced a difficult challenge.
+
+They needed to retain useful molecules while still exchanging materials with the environment.
+
+Too much leakage may prevent growth. Too little exchange may limit access to resources.
+
+### Goal
+
+Explore how membrane leakage affects protocell populations.
+
+### Activity
+
+```{r lab-leakage}
+leakages <- c(0.01, 0.03, 0.10, 0.20)
+
+leakage_results <- lapply(leakages, function(l) {
+  protocell_simulation(
+    n_cells = 20,
+    steps = 100,
+    leakage_rate = l,
+    seed = 123
+  )
+})
+
+names(leakage_results) <- paste0("leakage_", leakages)
+
+lapply(leakage_results, tail)
+```
+
+### Questions
+
+1. What happens when leakage becomes very high?
+2. Why might some leakage be beneficial?
+3. What membrane properties would be favored by selection?
+4. How might real protocells balance retention and exchange?
+
+### Extension
+
+Change both growth rate and leakage rate to explore interactions between them.
+
+## Lab 5: Autocatalytic Network Connectivity
+
+### Scientific Background
+
+Autocatalytic networks become more interconnected as catalytic interactions increase.
+
+Highly connected networks may develop feedback loops and self-reinforcing behavior.
+
+### Goal
+
+Explore how network connectivity influences system dynamics.
+
+### Activity
+
+```{r lab-network}
+probabilities <- c(0.05, 0.10, 0.20, 0.40)
+
+network_results <- lapply(probabilities, function(p) {
+  autocatalytic_network(
+    n_types = 8,
+    steps = 50,
+    catalysis_probability = p,
+    seed = 123
+  )
+})
+
+names(network_results) <- paste0("catalysis_", probabilities)
+
+lapply(network_results, function(x) tail(x$time_series))
+```
+
+### Questions
+
+1. How do sparse and dense networks differ?
+2. Which networks appear more stable?
+3. Which networks show stronger feedback effects?
+4. What might happen if connectivity becomes extremely high?
+
+### Extension
+
+Experiment with larger numbers of molecule types.
+
+## Lab 6: Comparing Origin-of-Life Frameworks
+
+### Scientific Background
+
+Different origin-of-life theories emphasize different processes.
+
+This activity compares three major frameworks represented in the package.
+
+### Goal
+
+Compare molecular evolution, protocells, and autocatalytic networks.
+
+### Activity
+
+Run:
+
+```{r lab-frameworks, eval=FALSE}
+simulate_abiogenesis()
+
+protocell_simulation()
+
+autocatalytic_network()
+```
+
+### Questions
+
+1. Which origin-of-life framework does each simulation represent?
+2. What does each model explain particularly well?
+3. What does each model fail to explain?
+4. Which model seems most convincing?
+5. Could multiple frameworks be correct simultaneously?
+
+### Extension
+
+Create a comparison table summarizing strengths and weaknesses.
+
+## Lab 7: Design Your Own Origin-of-Life Model
+
+### Scientific Background
+
+Real scientific research often involves designing new models rather than simply using existing ones.
+
+### Goal
+
+Develop a conceptual next-generation origin-of-life simulation.
+
+### Activity
+
+Students should design a hypothetical model that combines multiple concepts from the book.
+
+Possible components include:
+
+* Mutation
+* Selection
+* Molecular diversity
+* Protocells
+* Autocatalytic networks
+* Energy gradients
+* Environmental cycles
+* Spatial structure
+
+### Questions
+
+1. What mechanisms would your model include?
+2. What variables would be tracked?
+3. How would selection operate?
+4. How would new information arise?
+5. How would compartments interact with molecular evolution?
+
+### Extension
+
+Create a flowchart or pseudocode describing the proposed simulation.
+
+## Assessment Ideas
+
+Students can be asked to:
+
+1. Explain parameter choices.
+2. Compare simulation outputs.
+3. Interpret graphs and trends.
+4. Identify model limitations.
+5. Connect simulations to scientific theories.
+6. Propose model improvements.
+7. Design new experiments.
+8. Critically evaluate competing hypotheses.
+
+## Suggested Capstone Project
+
+Students can select one major origin-of-life framework and investigate it in depth.
+
+Possible projects include:
+
+* RNA World simulations
+* Protocell evolution
+* Autocatalytic networks
+* Diversity and complexity
+* Hybrid origin-of-life models
+
+The project should include:
+
+* Background research
+* Simulation experiments
+* Data analysis
+* Interpretation
+* Discussion of limitations
+* Recommendations for future work
+
+## Key Takeaways
+
+* Scientific understanding develops through experimentation.
+* Simple models can reveal important principles.
+* Mutation, selection, diversity, networks, and compartments interact in complex ways.
+* No single simulation explains the origin of life.
+* Comparing models helps reveal strengths and limitations.
+* The origin of life remains one of the most fascinating open questions in science.
+* `lifesimulatoR` provides a platform for exploring these ideas through computational experiments.

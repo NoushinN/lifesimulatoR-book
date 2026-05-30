@@ -1,0 +1,290 @@
+# Appendix C: Installation and Quick Start Guide
+
+## Purpose of This Appendix
+
+This appendix helps new users install and begin using `lifesimulatoR`.
+
+No prior experience with R is assumed.
+
+By the end of this appendix you should be able to:
+
+* Install R and RStudio
+* Install `lifesimulatoR`
+* Load the package
+* Run your first simulation
+* Access documentation and tutorials
+
+## Step 1: Install R
+
+R is the programming language used by `lifesimulatoR`.
+
+Download the latest version from:
+
+https://cran.r-project.org
+
+Follow the installation instructions for your operating system.
+
+## Step 2: Install RStudio
+
+RStudio provides a convenient interface for working with R.
+
+Download RStudio Desktop from:
+
+https://posit.co/download/rstudio-desktop/
+
+Install using the default settings.
+
+## Step 3: Install Required Packages
+
+Open RStudio and run:
+
+```r
+install.packages("remotes")
+```
+
+This package allows installation directly from GitHub.
+
+## Step 4: Install lifesimulatoR
+
+Install the package from GitHub:
+
+```r
+remotes::install_github(
+  "NoushinN/lifesimulatoR"
+)
+```
+
+Replace the repository name if it changes in the future.
+
+## Step 5: Load the Package
+
+```r
+library(lifesimulatoR)
+```
+
+If no error appears, installation was successful.
+
+## Your First Simulation
+
+Run a simple molecular evolution simulation:
+
+```r
+sim <- simulate_abiogenesis(
+  n_molecules = 100,
+  generations = 100,
+  mutation_rate = 0.02,
+  selection_strength = 1,
+  seed = 123
+)
+
+head(sim)
+```
+
+You should see a data frame describing how the population changed through time.
+
+## Create Your First Plot
+
+```r
+plot_simulation(
+  sim,
+  x = "generation",
+  y = "mean_fitness"
+)
+```
+
+This plot shows how mean fitness changes throughout the simulation.
+
+## Exploring Diversity
+
+Create a molecular population:
+
+```r
+pool <- create_prebiotic_pool(
+  n_molecules = 100,
+  seed = 123
+)
+```
+
+Summarize the population:
+
+```r
+summarize_molecules(pool)
+```
+
+Calculate entropy:
+
+```r
+counts <- c(10, 5, 1)
+
+shannon_entropy(counts)
+```
+
+## Exploring Protocells
+
+```r
+cells <- protocell_simulation(
+  n_cells = 20,
+  steps = 100,
+  seed = 123
+)
+
+head(cells)
+```
+
+Plot the results:
+
+```r
+plot_simulation(
+  cells,
+  x = "step",
+  y = "n_cells"
+)
+```
+
+## Exploring Autocatalytic Networks
+
+```r
+network <- autocatalytic_network(
+  n_types = 8,
+  steps = 50,
+  catalysis_probability = 0.2,
+  seed = 123
+)
+
+head(network$time_series)
+```
+
+View the network structure:
+
+```r
+network$catalysis_matrix
+```
+
+## Accessing Help
+
+View package documentation:
+
+```r
+help(package = "lifesimulatoR")
+```
+
+View help for individual functions:
+
+```r
+?simulate_abiogenesis
+?create_prebiotic_pool
+?protocell_simulation
+?autocatalytic_network
+```
+
+View tutorials:
+
+```r
+browseVignettes("lifesimulatoR")
+```
+
+## Common Problems and Solutions
+
+### Package Not Found
+
+Error:
+
+```r
+there is no package called 'lifesimulatoR'
+```
+
+Solution:
+
+Reinstall using:
+
+```r
+remotes::install_github(
+  "NoushinN/lifesimulatoR"
+)
+```
+
+### Function Not Found
+
+Error:
+
+```r
+could not find function
+```
+
+Solution:
+
+Load the package first:
+
+```r
+library(lifesimulatoR)
+```
+
+### Plotting Error
+
+Error:
+
+```r
+argument "x" is missing
+```
+
+Solution:
+
+Always specify both axes:
+
+```r
+plot_simulation(
+  sim,
+  x = "generation",
+  y = "mean_fitness"
+)
+```
+
+### Shannon Entropy Error
+
+Error:
+
+```r
+invalid 'type' (character)
+```
+
+Solution:
+
+`shannon_entropy()` expects counts, not character sequences:
+
+```r
+counts <- c(10,5,1)
+
+shannon_entropy(counts)
+```
+
+## Suggested Learning Path
+
+New users are encouraged to follow this sequence:
+
+1. Getting Started
+2. Origin of Life: Big Questions
+3. Prebiotic Chemistry
+4. Molecular Evolution
+5. Diversity and Complexity
+6. Protocells
+7. Autocatalytic Networks
+8. Comparing Origin-of-Life Frameworks
+9. Classroom Labs and Activities
+
+## Next Steps
+
+After becoming comfortable with the package you can:
+
+* Explore parameter sensitivity
+* Design new simulations
+* Extend existing functions
+* Develop classroom activities
+* Contribute to package development
+
+## Key Takeaways
+
+* `lifesimulatoR` is designed to be easy to install and use.
+* The package provides educational simulations inspired by origin-of-life research.
+* Simulations can be explored with only a few lines of code.
+* Documentation, vignettes, and labs provide guided learning opportunities.
+* The package can support teaching, self-study, workshops, and exploratory research.

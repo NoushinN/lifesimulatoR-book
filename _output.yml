@@ -1,0 +1,19 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: chapter
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: true
+      before: |
+        <li><a href="./">lifesimulatoR Book</a></li>
+    sharing:
+      github: true
+      facebook: false
+      twitter: false
+bookdown::html_book:
+  css: style.css
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex

@@ -1,0 +1,18 @@
+book_filename: "lifesimulatoR-book"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files:
+  - "index.Rmd"
+  - "01-origin-of-life.Rmd"
+  - "02-prebiotic-chemistry.Rmd"
+  - "03-molecular-evolution.Rmd"
+  - "04-diversity-complexity.Rmd"
+  - "05-protocells.Rmd"
+  - "06-autocatalytic-networks.Rmd"
+  - "07-comparing-hypotheses.Rmd"
+  - "08-appendix-a.Rmd"
+  - "09-appendix-b.Rmd"
+  - "10-appendix-c.Rmd"
+  - "References.Rmd"

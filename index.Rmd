@@ -1,0 +1,143 @@
+---
+title: "lifesimulatoR Book"
+author: "Noushin Nabavi"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: references.bib
+biblio-style: apalike
+link-citations: true
+description: "A theory-rich companion book for the lifesimulatoR R package."
+output:
+  bookdown::gitbook:
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE
+)
+
+library(lifesimulatoR)
+```
+
+# Welcome {-}
+
+The origin of life is one of the deepest and most challenging questions in science. It asks how non-living matter became organized enough to exhibit the properties we associate with living systems, including replication, variation, heredity, metabolism, adaptation, and evolution.
+
+Unlike many scientific questions, the origin of life sits at the intersection of multiple disciplines. Chemistry seeks to understand how biological building blocks could form naturally. Biology examines how information and evolution emerged. Physics explores energy flow and self-organization. Geology provides clues about the environments of the early Earth. Complexity science investigates how interacting systems can generate emergent behavior.
+
+At its core, the origin-of-life problem can be summarized by a simple question:
+
+> How can chemistry become biology?
+
+Despite decades of research, there is currently no universally accepted explanation. Instead, several major scientific frameworks have been proposed.
+
+The **RNA World** hypothesis suggests that life may have begun with RNA-like molecules capable of both storing information and catalyzing reactions. **Metabolism-First** theories propose that self-sustaining reaction networks emerged before genetic systems. **Protocell** theories emphasize the importance of compartments and primitive membranes. **Autocatalytic Set Theory** focuses on networks of molecules that collectively support their own production. Increasingly, researchers view these theories as complementary rather than competing, suggesting that life may have emerged through interactions among molecules, networks, compartments, and environmental energy sources.
+
+Although these theories differ in emphasis, most agree that life-like systems require several key ingredients:
+
+1. Variation
+2. Persistence
+3. Replication or reproduction
+4. Mutation and novelty
+5. Selection
+6. Organization
+7. Compartmentalization
+8. Energy flow
+
+Understanding how these ingredients became linked remains one of the central challenges of modern science.
+
+This book serves as the theoretical companion to the `lifesimulatoR` package. The package provides simplified computational simulations that allow readers to explore many of the ideas discussed in origin-of-life research. Rather than attempting to reproduce the full complexity of early Earth chemistry, the simulations focus on fundamental concepts such as mutation, selection, diversity, autocatalysis, compartmentalization, and emergence.
+
+The goal is not to demonstrate how life actually originated. Instead, the goal is to provide conceptual tools that help illuminate the logic underlying major origin-of-life theories.
+
+## What is lifesimulatoR? {-}
+
+`lifesimulatoR` is an educational R package designed to explore simplified models of abiogenesis and early evolution.
+
+The package includes tools for:
+
+- Creating symbolic molecular populations
+- Simulating mutation and replication
+- Exploring evolutionary dynamics
+- Measuring diversity and entropy
+- Modeling protocell populations
+- Simulating autocatalytic networks
+- Visualizing simulation outputs
+
+These models are intentionally simplified so that the underlying concepts remain accessible and transparent.
+
+## How this book is organized {-}
+
+The book follows a progression from chemistry toward increasingly life-like systems.
+
+**Origin of Life: Big Questions** introduces the scientific problem and the major theories that attempt to explain life's emergence.
+
+**Prebiotic Chemistry and Molecular Pools** examines how molecular diversity may have arisen on the early Earth.
+
+**Molecular Evolution** explores how replication, mutation, heredity, and selection can produce evolutionary change.
+
+**Diversity, Entropy, and Complexity** investigates how variation can be quantified and how complexity differs from randomness.
+
+**Protocells and Compartmentalization** examines how boundaries may have helped organize early chemistry.
+
+**Autocatalytic Networks** explores how networks of interacting molecules can become self-reinforcing and self-maintaining.
+
+**Comparing Origin-of-Life Frameworks** integrates the major theories and discusses open questions and future research directions.
+
+The appendices provide function references, classroom activities, and additional resources for educators and students.
+
+## How to use this book {-}
+
+This book can be approached in several ways.
+
+Students may use it as a self-study introduction to origin-of-life science.
+
+Instructors may use it as a teaching companion for courses in biology, chemistry, complexity science, astrobiology, or systems thinking.
+
+Researchers and science communicators may use it as a conceptual framework for discussing major ideas in abiogenesis.
+
+Readers are encouraged to modify examples, experiment with parameter values, compare simulation outcomes, and critically evaluate model assumptions.
+
+## A Simple Example {-}
+
+The package can be used to simulate a simplified evolutionary process.
+
+```{r welcome-example}
+sim <- simulate_abiogenesis(
+  n_molecules = 100,
+  generations = 100,
+  mutation_rate = 0.02,
+  selection_strength = 1,
+  seed = 123
+)
+
+head(sim)
+```
+
+Simulation outputs can be visualized using:
+
+```{r welcome-plot}
+plot_simulation(
+  sim,
+  x = "generation",
+  y = "mean_fitness"
+)
+```
+
+These simulations do not represent the actual origin of life. Instead, they illustrate how variation, mutation, replication, and selection can produce population-level change through time.
+
+## Important Interpretation Note {-}
+
+The simulations in `lifesimulatoR` are educational models.
+
+They do not include realistic chemistry, thermodynamics, environmental variability, molecular folding, or detailed reaction kinetics. Consequently, simulation results should not be interpreted as evidence supporting a specific origin-of-life theory.
+
+Instead, the models are best viewed as conceptual laboratories that allow readers to explore ideas, test assumptions, and develop intuition about the mechanisms frequently discussed in origin-of-life research.
+
+## Moving Forward {-}
+
+The chapters that follow examine the major scientific ideas behind life's emergence, beginning with the fundamental question of how non-living chemistry could generate the diversity and organization required for evolution to begin.

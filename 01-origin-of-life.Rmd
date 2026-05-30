@@ -1,0 +1,137 @@
+# Origin of Life: Big Questions
+
+## Why this question matters
+
+The origin of life is one of the most important open questions in science. It asks how non-living matter could give rise to systems that show life-like properties such as persistence, replication, variation, heredity, metabolism, and evolution.
+
+This question sits at the intersection of chemistry, biology, geology, physics, information theory, and complexity science. It is not only about identifying the first living organism. It is also about understanding how matter became organized enough to evolve.
+
+A useful way to frame the problem is:
+
+> How can chemistry become biology?
+
+## Major origin-of-life theories
+
+There is no single universally accepted theory of the origin of life. Instead, there are several major research traditions.
+
+| Theory                   | Main idea                                                                                   | Central challenge                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| RNA World                | Life began with RNA-like molecules capable of storing information and catalyzing reactions. | How did RNA-like molecules form and replicate reliably?             |
+| Metabolism First         | Self-sustaining reaction networks emerged before genetic replication.                       | How did such networks become stable and evolvable?                  |
+| Protocell First          | Compartments played a central role in organizing chemistry.                                 | How did compartments grow, divide, and preserve internal chemistry? |
+| Autocatalytic Set Theory | Networks of mutually reinforcing molecules produced self-maintaining systems.               | How did network organization become heritable?                      |
+| Hybrid Models            | Life emerged through coupling among molecules, compartments, energy flows, and networks.    | How did these processes become integrated?                          |
+
+These theories are not always mutually exclusive. A complete account may need to explain how molecular information, metabolism, compartments, and energy flow became linked.
+
+## Conceptual model
+
+A minimal life-like system may need several ingredients:
+
+1. **Variation**: molecules or systems must differ.
+2. **Persistence**: some variants must last longer than others.
+3. **Replication or reproduction**: successful variants must influence future states.
+4. **Mutation or novelty**: new variants must appear.
+5. **Selection**: some variants must become more common.
+6. **Organization**: components must interact in structured ways.
+
+In `lifesimulatoR`, these ideas are represented using symbolic molecules and simple simulations. The package does not attempt to reproduce real prebiotic chemistry. Instead, it provides simplified computational models for exploring the logic of origin-of-life ideas.
+
+## Package example: a simple molecular evolution simulation
+
+The following simulation begins with a symbolic molecular population. Over repeated generations, molecules are copied, mutated, and selected according to a simplified fitness rule.
+
+```{r origin-simple-sim}
+sim <- simulate_abiogenesis(
+  n_molecules = 100,
+  generations = 100,
+  mutation_rate = 0.02,
+  selection_strength = 1,
+  seed = 123
+)
+
+head(sim)
+```
+
+The output is a time series. Each row summarizes the state of the molecular population at a generation.
+
+Depending on the package version, the output may include variables such as:
+
+* generation number,
+* number of molecules,
+* mean fitness,
+* maximum fitness,
+* diversity,
+* mean sequence length.
+
+## Visualizing change through time
+
+```{r origin-simple-plot}
+plot_simulation(
+  sim,
+  x = "generation",
+  y = "mean_fitness"
+)
+```
+
+This plot helps us ask whether the molecular population shows selection-like change over time.
+
+## Interpretation of results
+
+This simulation does not show the actual origin of life. Instead, it demonstrates a simplified principle:
+
+> If a population has variation, replication, mutation, and selection, then population-level properties can change through time.
+
+If mean fitness increases, the toy model is showing that some molecular variants are becoming more successful under the model’s assumptions.
+
+If diversity changes, the model is showing the balance between two opposing forces:
+
+* mutation introduces new variants,
+* selection amplifies successful variants.
+
+In a classroom setting, this example can introduce the difference between:
+
+* chemical randomness,
+* evolutionary dynamics,
+* life-like organization,
+* and modern biological life.
+
+## What this model leaves out
+
+This simplified model does not include:
+
+* real molecular chemistry,
+* RNA folding,
+* energy gradients,
+* thermodynamics,
+* mineral surfaces,
+* wet-dry cycles,
+* environmental change,
+* spatial structure,
+* membranes or compartments,
+* metabolism.
+
+These omissions are intentional. The purpose of the model is to isolate a few basic ideas and make them easy to explore.
+
+Later chapters introduce additional concepts such as diversity metrics, protocells, and autocatalytic networks.
+
+## How this chapter connects to the rest of the book
+
+This chapter introduces the central problem: how non-living systems might begin to show life-like behaviour.
+
+The next chapters explore this question from different angles:
+
+* **Prebiotic Chemistry and Molecular Pools**: Where does molecular variation come from?
+* **Molecular Evolution**: How do mutation, replication, and selection change populations?
+* **Diversity and Complexity**: How can we measure variation and organization?
+* **Protocells**: How can compartments create individuality?
+* **Autocatalytic Networks**: How can systems become self-reinforcing?
+
+## Reflection questions
+
+1. Which features of life are represented in this simple simulation?
+2. Which features are missing?
+3. Could evolution begin before cells existed?
+4. Could selection act on molecules, compartments, or networks?
+5. Does increasing fitness imply increasing complexity?
+6. What would need to be added to make this model more chemically realistic?
