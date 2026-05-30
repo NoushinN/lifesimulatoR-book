@@ -20,7 +20,7 @@ It is designed for teaching, self-study, workshops, science communication, and e
 ```r
 install.packages(c("bookdown", "rmarkdown", "knitr", "ggplot2", "remotes"))
 
-remotes::install_github("YOUR_GITHUB_USERNAME/lifesimulatoR")
+remotes::install_github("NoushinN/lifesimulatoR")
 
 bookdown::render_book("index.Rmd")
 ```
