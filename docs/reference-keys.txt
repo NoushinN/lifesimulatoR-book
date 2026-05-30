@@ -299,3 +299,4 @@ rna-world-and-molecular-evolution
 protocells-and-synthetic-life
 autocatalytic-networks-and-complexity
 prebiotic-chemistry-and-early-earth-environments
+selected-references-and-further-reading

@@ -1,4 +1,4 @@
-# Selected References and Further Reading {-}
+# Selected References and Further Reading
 
 This section collects selected readings recommended throughout the book. These sources provide background on origin-of-life theories, molecular evolution, protocells, autocatalytic networks, complexity, and astrobiology.
 
