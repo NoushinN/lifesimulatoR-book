@@ -1,3 +1,37 @@
-# References
+# Selected References and Further Reading {-}
 
-<div id="refs"></div>
+This section collects selected readings recommended throughout the book. These sources provide background on origin-of-life theories, molecular evolution, protocells, autocatalytic networks, complexity, and astrobiology.
+
+## Origin of Life and General Frameworks
+
+- Deamer, D. W. (2019). *Assembling Life: How Can Life Begin on Earth and Other Habitable Planets?*
+- Luisi, P. L. (2016). *The Emergence of Life: From Chemical Origins to Synthetic Biology.*
+- Maynard Smith, J., & Szathmáry, E. (1999). *The Origins of Life: From the Birth of Life to the Origin of Language.*
+- Smith, E., & Morowitz, H. J. (2016). *The Origin and Nature of Life on Earth.*
+
+## RNA World and Molecular Evolution
+
+- Eigen, M. (1971). *Self-Organization of Matter and the Evolution of Biological Macromolecules.*
+- Gilbert, W. (1986). *The RNA World.*
+- Joyce, G. F. (2002). *The Antiquity of RNA-Based Evolution.*
+- Orgel, L. E. (2004). *Prebiotic Chemistry and the Origin of the RNA World.*
+
+## Protocells and Synthetic Life
+
+- Deamer, D. W. (2019). *Assembling Life.*
+- Morowitz, H. J. (1992). *Beginnings of Cellular Life.*
+- Szostak, J. W., Bartel, D. P., & Luisi, P. L. (2001). *Synthesizing Life.*
+
+## Autocatalytic Networks and Complexity
+
+- Hordijk, W., & Steel, M. (2018). *Autocatalytic Sets and the Origin of Life.*
+- Kauffman, S. A. (1993). *The Origins of Order.*
+- Lancet, D., Zidovetzki, R., & Markovitch, O. (2018). *Systems Protobiology: Origin of Life in Lipid Catalytic Networks.*
+- Walker, S. I. (2017). *Origins of Life and Complexity.*
+
+## Prebiotic Chemistry and Early Earth Environments
+
+- Martin, W., Baross, J., Kelley, D., & Russell, M. J. (2008). *Hydrothermal Vents and the Origin of Life.*
+- Miller, S. L. (1953). *A Production of Amino Acids Under Possible Primitive Earth Conditions.*
+- Sutherland, J. D. (2016). *The Origin of Life—Out of the Blue.*
+- Wächtershäuser, G. (1988). *Before Enzymes and Templates: Theory of Surface Metabolism.*
