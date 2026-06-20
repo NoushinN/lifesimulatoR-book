@@ -1,6 +1,8 @@
 bookdown::gitbook:
   css: style.css
   split_by: chapter
+  includes:
+    in_header: google-analytics.html
   config:
     toc:
       collapse: section
@@ -11,12 +13,8 @@ bookdown::gitbook:
       github: true
       facebook: false
       twitter: false
-bookdown::html_book:
-  css: style.css
-includes:
-    in_header: google-analytics.html
+
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-
