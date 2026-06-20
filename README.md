@@ -43,3 +43,11 @@ bookdown::render_book("index.Rmd")
 MIT License.
 
 Copyright (c) 2026 Noushin Nabavi
+
+## Citation
+
+If you use this book, please cite:
+
+Nabavi, N. (2026). *lifesimulatoR-book: A Companion Book for Teaching Origin-of-Life Concepts with Computational Simulations*. 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20767188.svg)](https://doi.org/10.5281/zenodo.20767188)

@@ -40,13 +40,11 @@ An autocatalytic network is a collection of molecules in which members of the ne
 
 For example:
 
-```text id="network-example"
-Molecule A helps produce Molecule B
+Molecule A helps produce Molecule B.
 
-Molecule B helps produce Molecule C
+Molecule B helps produce Molecule C.
 
-Molecule C helps produce Molecule A
-```
+Molecule C helps produce Molecule A.
 
 No single molecule is self-sufficient.
 
@@ -138,7 +136,7 @@ Although highly simplified, this framework captures the essential idea of mutual
 
 ## Creating an Autocatalytic Network
 
-```{r autocatalytic-basic} id="autocatalytic-basic"
+```{r autocatalytic-basic}
 network <- autocatalytic_network(
   n_types = 8,
   steps = 50,
@@ -169,7 +167,7 @@ Each connection represents a potential pathway through which molecules influence
 
 We can examine the abundance of a particular molecular type.
 
-```{r autocatalytic-plot} id="autocatalytic-plot"
+```{r autocatalytic-plot}
 m1 <- subset(
   network$time_series,
   molecule == "M1"
@@ -194,13 +192,11 @@ Positive feedback amplifies change.
 
 Example:
 
-```text id="positive-feedback"
 A promotes B
 
 B promotes C
 
 C promotes A
-```
 
 Growth of one component reinforces the others.
 
@@ -226,7 +222,7 @@ The level of connectivity strongly influences network behavior.
 
 ## Sparse Versus Dense Networks
 
-```{r autocatalytic-density} id="autocatalytic-density"
+```{r autocatalytic-density} 
 sparse_network <- autocatalytic_network(
   n_types = 8,
   steps = 50,

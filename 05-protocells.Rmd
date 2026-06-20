@@ -137,7 +137,7 @@ Although highly simplified, this model captures several important concepts:
 
 ## Simulating a Protocell Population
 
-```{r protocell-basic} id="n4k3fh"
+```{r protocell-basic} 
 cells <- protocell_simulation(
   n_cells = 20,
   steps = 100,
@@ -154,7 +154,7 @@ The output summarizes how the protocell population changes through time.
 
 ## Visualizing Population Growth
 
-```{r protocell-plot} id="3q0x8g"
+```{r protocell-plot} 
 plot_simulation(
   cells,
   x = "step",
@@ -196,7 +196,7 @@ Too much leakage may prevent protocells from maintaining sufficient internal org
 
 ## Experiment: Exploring Leakage
 
-```{r proto-leakage} id="1h8s2n"
+```{r proto-leakage} 
 low_leakage <- protocell_simulation(
   n_cells = 20,
   steps = 100,

@@ -13,7 +13,10 @@ bookdown::gitbook:
       twitter: false
 bookdown::html_book:
   css: style.css
+includes:
+    in_header: google-analytics.html
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
+

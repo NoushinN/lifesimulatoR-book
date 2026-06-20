@@ -100,7 +100,7 @@ pool <- create_prebiotic_pool(
   seed = 123
 )
 
-head(pool)
+cat(head(pool), sep = "\n")
 ```
 
 Each sequence represents a symbolic molecule.
@@ -167,7 +167,7 @@ next_generation <- replicate_molecules(
   selection_strength = 1
 )
 
-next_generation
+cat(head(next_generation), sep = "\n")
 ```
 
 Replication allows information to persist through time.
