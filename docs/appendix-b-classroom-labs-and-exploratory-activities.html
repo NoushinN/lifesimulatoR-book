@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Appendix B: Classroom Labs and Exploratory Activities | lifesimulatoR Book</title>
+  <meta name="description" content="A theory-rich companion book for the lifesimulatoR R package." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Appendix B: Classroom Labs and Exploratory Activities | lifesimulatoR Book" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="A theory-rich companion book for the lifesimulatoR R package." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Appendix B: Classroom Labs and Exploratory Activities | lifesimulatoR Book" />
+  
+  <meta name="twitter:description" content="A theory-rich companion book for the lifesimulatoR R package." />
+  
+
+<meta name="author" content="Noushin Nabavi" />
+
+
+<meta name="date" content="2026-06-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="appendix-a-package-function-reference.html"/>
+<link rel="next" href="appendix-c-installation-and-quick-start-guide.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">lifesimulatoR Book</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-is-lifesimulator"><i class="fa fa-check"></i>What is lifesimulatoR?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-this-book-is-organized"><i class="fa fa-check"></i>How this book is organized</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i>How to use this book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#a-simple-example"><i class="fa fa-check"></i>A Simple Example</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#important-interpretation-note"><i class="fa fa-check"></i>Important Interpretation Note</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#moving-forward"><i class="fa fa-check"></i>Moving Forward</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html"><i class="fa fa-check"></i><b>1</b> Origin of Life: Big Questions</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#why-this-question-matters"><i class="fa fa-check"></i><b>1.1</b> Why this question matters</a></li>
+<li class="chapter" data-level="1.2" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#major-origin-of-life-theories"><i class="fa fa-check"></i><b>1.2</b> Major origin-of-life theories</a></li>
+<li class="chapter" data-level="1.3" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#conceptual-model"><i class="fa fa-check"></i><b>1.3</b> Conceptual model</a></li>
+<li class="chapter" data-level="1.4" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#package-example-a-simple-molecular-evolution-simulation"><i class="fa fa-check"></i><b>1.4</b> Package example: a simple molecular evolution simulation</a></li>
+<li class="chapter" data-level="1.5" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#visualizing-change-through-time"><i class="fa fa-check"></i><b>1.5</b> Visualizing change through time</a></li>
+<li class="chapter" data-level="1.6" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#interpretation-of-results"><i class="fa fa-check"></i><b>1.6</b> Interpretation of results</a></li>
+<li class="chapter" data-level="1.7" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#what-this-model-leaves-out"><i class="fa fa-check"></i><b>1.7</b> What this model leaves out</a></li>
+<li class="chapter" data-level="1.8" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#how-this-chapter-connects-to-the-rest-of-the-book"><i class="fa fa-check"></i><b>1.8</b> How this chapter connects to the rest of the book</a></li>
+<li class="chapter" data-level="1.9" data-path="origin-of-life-big-questions.html"><a href="origin-of-life-big-questions.html#reflection-questions"><i class="fa fa-check"></i><b>1.9</b> Reflection questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html"><i class="fa fa-check"></i><b>2</b> Prebiotic Chemistry and Molecular Pools</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#why-prebiotic-chemistry-matters"><i class="fa fa-check"></i><b>2.1</b> Why Prebiotic Chemistry Matters</a></li>
+<li class="chapter" data-level="2.2" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#the-early-earth"><i class="fa fa-check"></i><b>2.2</b> The Early Earth</a></li>
+<li class="chapter" data-level="2.3" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#sources-of-prebiotic-molecules"><i class="fa fa-check"></i><b>2.3</b> Sources of Prebiotic Molecules</a></li>
+<li class="chapter" data-level="2.4" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#hydrothermal-vents"><i class="fa fa-check"></i><b>2.4</b> Hydrothermal Vents</a></li>
+<li class="chapter" data-level="2.5" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#shallow-ponds-and-tide-pools"><i class="fa fa-check"></i><b>2.5</b> Shallow Ponds and Tide Pools</a></li>
+<li class="chapter" data-level="2.6" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#mineral-surfaces"><i class="fa fa-check"></i><b>2.6</b> Mineral Surfaces</a></li>
+<li class="chapter" data-level="2.7" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#ice-environments"><i class="fa fa-check"></i><b>2.7</b> Ice Environments</a></li>
+<li class="chapter" data-level="2.8" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#the-millerurey-experiment"><i class="fa fa-check"></i><b>2.8</b> The Miller–Urey Experiment</a></li>
+<li class="chapter" data-level="2.9" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#from-molecules-to-molecular-pools"><i class="fa fa-check"></i><b>2.9</b> From Molecules to Molecular Pools</a></li>
+<li class="chapter" data-level="2.10" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#chemical-space"><i class="fa fa-check"></i><b>2.10</b> Chemical Space</a></li>
+<li class="chapter" data-level="2.11" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#conceptual-model-in-lifesimulator"><i class="fa fa-check"></i><b>2.11</b> Conceptual Model in <code>lifesimulatoR</code></a></li>
+<li class="chapter" data-level="2.12" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#creating-a-prebiotic-molecular-pool"><i class="fa fa-check"></i><b>2.12</b> Creating a Prebiotic Molecular Pool</a></li>
+<li class="chapter" data-level="2.13" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#exploring-molecular-diversity"><i class="fa fa-check"></i><b>2.13</b> Exploring Molecular Diversity</a></li>
+<li class="chapter" data-level="2.14" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#exploring-chemical-space-with-different-pools"><i class="fa fa-check"></i><b>2.14</b> Exploring Chemical Space with Different Pools</a></li>
+<li class="chapter" data-level="2.15" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#why-the-starting-pool-matters"><i class="fa fa-check"></i><b>2.15</b> Why the Starting Pool Matters</a></li>
+<li class="chapter" data-level="2.16" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#limitations-of-the-model"><i class="fa fa-check"></i><b>2.16</b> Limitations of the Model</a></li>
+<li class="chapter" data-level="2.17" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#looking-ahead"><i class="fa fa-check"></i><b>2.17</b> Looking Ahead</a></li>
+<li class="chapter" data-level="2.18" data-path="prebiotic-chemistry-and-molecular-pools.html"><a href="prebiotic-chemistry-and-molecular-pools.html#reflection-questions-1"><i class="fa fa-check"></i><b>2.18</b> Reflection Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="molecular-evolution.html"><a href="molecular-evolution.html"><i class="fa fa-check"></i><b>3</b> Molecular Evolution</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="molecular-evolution.html"><a href="molecular-evolution.html#why-molecular-evolution-matters"><i class="fa fa-check"></i><b>3.1</b> Why Molecular Evolution Matters</a></li>
+<li class="chapter" data-level="3.2" data-path="molecular-evolution.html"><a href="molecular-evolution.html#from-prebiotic-chemistry-to-evolution"><i class="fa fa-check"></i><b>3.2</b> From Prebiotic Chemistry to Evolution</a></li>
+<li class="chapter" data-level="3.3" data-path="molecular-evolution.html"><a href="molecular-evolution.html#the-rna-world-hypothesis"><i class="fa fa-check"></i><b>3.3</b> The RNA World Hypothesis</a></li>
+<li class="chapter" data-level="3.4" data-path="molecular-evolution.html"><a href="molecular-evolution.html#information-and-heredity"><i class="fa fa-check"></i><b>3.4</b> Information and Heredity</a></li>
+<li class="chapter" data-level="3.5" data-path="molecular-evolution.html"><a href="molecular-evolution.html#conceptual-model-1"><i class="fa fa-check"></i><b>3.5</b> Conceptual Model</a></li>
+<li class="chapter" data-level="3.6" data-path="molecular-evolution.html"><a href="molecular-evolution.html#creating-a-molecular-population"><i class="fa fa-check"></i><b>3.6</b> Creating a Molecular Population</a></li>
+<li class="chapter" data-level="3.7" data-path="molecular-evolution.html"><a href="molecular-evolution.html#molecular-fitness"><i class="fa fa-check"></i><b>3.7</b> Molecular Fitness</a></li>
+<li class="chapter" data-level="3.8" data-path="molecular-evolution.html"><a href="molecular-evolution.html#fitness-landscapes"><i class="fa fa-check"></i><b>3.8</b> Fitness Landscapes</a></li>
+<li class="chapter" data-level="3.9" data-path="molecular-evolution.html"><a href="molecular-evolution.html#replication"><i class="fa fa-check"></i><b>3.9</b> Replication</a></li>
+<li class="chapter" data-level="3.10" data-path="molecular-evolution.html"><a href="molecular-evolution.html#mutation"><i class="fa fa-check"></i><b>3.10</b> Mutation</a></li>
+<li class="chapter" data-level="3.11" data-path="molecular-evolution.html"><a href="molecular-evolution.html#mutation-rate-and-the-evolutionary-trade-off"><i class="fa fa-check"></i><b>3.11</b> Mutation Rate and the Evolutionary Trade-Off</a></li>
+<li class="chapter" data-level="3.12" data-path="molecular-evolution.html"><a href="molecular-evolution.html#the-error-threshold"><i class="fa fa-check"></i><b>3.12</b> The Error Threshold</a></li>
+<li class="chapter" data-level="3.13" data-path="molecular-evolution.html"><a href="molecular-evolution.html#selection"><i class="fa fa-check"></i><b>3.13</b> Selection</a></li>
+<li class="chapter" data-level="3.14" data-path="molecular-evolution.html"><a href="molecular-evolution.html#evolving-one-generation"><i class="fa fa-check"></i><b>3.14</b> Evolving One Generation</a></li>
+<li class="chapter" data-level="3.15" data-path="molecular-evolution.html"><a href="molecular-evolution.html#simulating-molecular-evolution"><i class="fa fa-check"></i><b>3.15</b> Simulating Molecular Evolution</a></li>
+<li class="chapter" data-level="3.16" data-path="molecular-evolution.html"><a href="molecular-evolution.html#visualizing-fitness-through-time"><i class="fa fa-check"></i><b>3.16</b> Visualizing Fitness Through Time</a></li>
+<li class="chapter" data-level="3.17" data-path="molecular-evolution.html"><a href="molecular-evolution.html#visualizing-diversity-through-time"><i class="fa fa-check"></i><b>3.17</b> Visualizing Diversity Through Time</a></li>
+<li class="chapter" data-level="3.18" data-path="molecular-evolution.html"><a href="molecular-evolution.html#interpreting-simulation-results"><i class="fa fa-check"></i><b>3.18</b> Interpreting Simulation Results</a>
+<ul>
+<li class="chapter" data-level="3.18.1" data-path="molecular-evolution.html"><a href="molecular-evolution.html#increasing-fitness"><i class="fa fa-check"></i><b>3.18.1</b> Increasing Fitness</a></li>
+<li class="chapter" data-level="3.18.2" data-path="molecular-evolution.html"><a href="molecular-evolution.html#increasing-diversity"><i class="fa fa-check"></i><b>3.18.2</b> Increasing Diversity</a></li>
+<li class="chapter" data-level="3.18.3" data-path="molecular-evolution.html"><a href="molecular-evolution.html#decreasing-diversity"><i class="fa fa-check"></i><b>3.18.3</b> Decreasing Diversity</a></li>
+<li class="chapter" data-level="3.18.4" data-path="molecular-evolution.html"><a href="molecular-evolution.html#stable-values"><i class="fa fa-check"></i><b>3.18.4</b> Stable Values</a></li>
+</ul></li>
+<li class="chapter" data-level="3.19" data-path="molecular-evolution.html"><a href="molecular-evolution.html#evolution-as-information-processing"><i class="fa fa-check"></i><b>3.19</b> Evolution as Information Processing</a></li>
+<li class="chapter" data-level="3.20" data-path="molecular-evolution.html"><a href="molecular-evolution.html#limitations-of-the-model-1"><i class="fa fa-check"></i><b>3.20</b> Limitations of the Model</a></li>
+<li class="chapter" data-level="3.21" data-path="molecular-evolution.html"><a href="molecular-evolution.html#connections-to-later-chapters"><i class="fa fa-check"></i><b>3.21</b> Connections to Later Chapters</a></li>
+<li class="chapter" data-level="3.22" data-path="molecular-evolution.html"><a href="molecular-evolution.html#key-takeaways"><i class="fa fa-check"></i><b>3.22</b> Key Takeaways</a></li>
+<li class="chapter" data-level="3.23" data-path="molecular-evolution.html"><a href="molecular-evolution.html#suggested-readings"><i class="fa fa-check"></i><b>3.23</b> Suggested Readings</a></li>
+<li class="chapter" data-level="3.24" data-path="molecular-evolution.html"><a href="molecular-evolution.html#reflection-questions-2"><i class="fa fa-check"></i><b>3.24</b> Reflection Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html"><i class="fa fa-check"></i><b>4</b> Diversity, Entropy, and Complexity</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#why-diversity-matters"><i class="fa fa-check"></i><b>4.1</b> Why Diversity Matters</a></li>
+<li class="chapter" data-level="4.2" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#diversity-in-origin-of-life-research"><i class="fa fa-check"></i><b>4.2</b> Diversity in Origin-of-Life Research</a></li>
+<li class="chapter" data-level="4.3" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#what-is-entropy"><i class="fa fa-check"></i><b>4.3</b> What Is Entropy?</a></li>
+<li class="chapter" data-level="4.4" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#shannon-entropy"><i class="fa fa-check"></i><b>4.4</b> Shannon Entropy</a></li>
+<li class="chapter" data-level="4.5" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#conceptual-model-2"><i class="fa fa-check"></i><b>4.5</b> Conceptual Model</a></li>
+<li class="chapter" data-level="4.6" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#summarizing-a-molecular-population"><i class="fa fa-check"></i><b>4.6</b> Summarizing a Molecular Population</a></li>
+<li class="chapter" data-level="4.7" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#measuring-shannon-entropy"><i class="fa fa-check"></i><b>4.7</b> Measuring Shannon Entropy</a></li>
+<li class="chapter" data-level="4.8" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#comparing-low-and-high-diversity-systems"><i class="fa fa-check"></i><b>4.8</b> Comparing Low and High Diversity Systems</a></li>
+<li class="chapter" data-level="4.9" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#diversity-versus-randomness"><i class="fa fa-check"></i><b>4.9</b> Diversity Versus Randomness</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#ordered-system"><i class="fa fa-check"></i><b>4.9.1</b> Ordered System</a></li>
+<li class="chapter" data-level="4.9.2" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#random-system"><i class="fa fa-check"></i><b>4.9.2</b> Random System</a></li>
+<li class="chapter" data-level="4.9.3" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#organized-system"><i class="fa fa-check"></i><b>4.9.3</b> Organized System</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#diversity-during-evolution"><i class="fa fa-check"></i><b>4.10</b> Diversity During Evolution</a></li>
+<li class="chapter" data-level="4.11" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#visualizing-diversity-through-time-1"><i class="fa fa-check"></i><b>4.11</b> Visualizing Diversity Through Time</a></li>
+<li class="chapter" data-level="4.12" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#interpreting-diversity-trends"><i class="fa fa-check"></i><b>4.12</b> Interpreting Diversity Trends</a>
+<ul>
+<li class="chapter" data-level="4.12.1" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#increasing-diversity-1"><i class="fa fa-check"></i><b>4.12.1</b> Increasing Diversity</a></li>
+<li class="chapter" data-level="4.12.2" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#decreasing-diversity-1"><i class="fa fa-check"></i><b>4.12.2</b> Decreasing Diversity</a></li>
+<li class="chapter" data-level="4.12.3" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#stable-diversity"><i class="fa fa-check"></i><b>4.12.3</b> Stable Diversity</a></li>
+</ul></li>
+<li class="chapter" data-level="4.13" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#complexity-and-the-origin-of-life"><i class="fa fa-check"></i><b>4.13</b> Complexity and the Origin of Life</a></li>
+<li class="chapter" data-level="4.14" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#diversity-is-not-enough"><i class="fa fa-check"></i><b>4.14</b> Diversity Is Not Enough</a></li>
+<li class="chapter" data-level="4.15" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#connections-to-other-chapters"><i class="fa fa-check"></i><b>4.15</b> Connections to Other Chapters</a></li>
+<li class="chapter" data-level="4.16" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#key-takeaways-1"><i class="fa fa-check"></i><b>4.16</b> Key Takeaways</a></li>
+<li class="chapter" data-level="4.17" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#suggested-readings-1"><i class="fa fa-check"></i><b>4.17</b> Suggested Readings</a></li>
+<li class="chapter" data-level="4.18" data-path="diversity-entropy-and-complexity.html"><a href="diversity-entropy-and-complexity.html#reflection-questions-3"><i class="fa fa-check"></i><b>4.18</b> Reflection Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html"><i class="fa fa-check"></i><b>5</b> Protocells and Compartmentalization</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#why-compartments-matter"><i class="fa fa-check"></i><b>5.1</b> Why Compartments Matter</a></li>
+<li class="chapter" data-level="5.2" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#what-is-a-protocell"><i class="fa fa-check"></i><b>5.2</b> What Is a Protocell?</a></li>
+<li class="chapter" data-level="5.3" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#why-compartments-may-have-been-essential"><i class="fa fa-check"></i><b>5.3</b> Why Compartments May Have Been Essential</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#concentration-of-molecules"><i class="fa fa-check"></i><b>5.3.1</b> Concentration of Molecules</a></li>
+<li class="chapter" data-level="5.3.2" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#protection"><i class="fa fa-check"></i><b>5.3.2</b> Protection</a></li>
+<li class="chapter" data-level="5.3.3" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#cooperation"><i class="fa fa-check"></i><b>5.3.3</b> Cooperation</a></li>
+<li class="chapter" data-level="5.3.4" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#inheritance"><i class="fa fa-check"></i><b>5.3.4</b> Inheritance</a></li>
+<li class="chapter" data-level="5.3.5" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#selection-at-multiple-levels"><i class="fa fa-check"></i><b>5.3.5</b> Selection at Multiple Levels</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#protocells-in-origin-of-life-theories"><i class="fa fa-check"></i><b>5.4</b> Protocells in Origin-of-Life Theories</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#rna-world-models"><i class="fa fa-check"></i><b>5.4.1</b> RNA World Models</a></li>
+<li class="chapter" data-level="5.4.2" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#metabolism-first-models"><i class="fa fa-check"></i><b>5.4.2</b> Metabolism-First Models</a></li>
+<li class="chapter" data-level="5.4.3" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#autocatalytic-network-models"><i class="fa fa-check"></i><b>5.4.3</b> Autocatalytic Network Models</a></li>
+<li class="chapter" data-level="5.4.4" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#hybrid-models"><i class="fa fa-check"></i><b>5.4.4</b> Hybrid Models</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#early-membranes"><i class="fa fa-check"></i><b>5.5</b> Early Membranes</a></li>
+<li class="chapter" data-level="5.6" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#conceptual-model-3"><i class="fa fa-check"></i><b>5.6</b> Conceptual Model</a></li>
+<li class="chapter" data-level="5.7" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#simulating-a-protocell-population"><i class="fa fa-check"></i><b>5.7</b> Simulating a Protocell Population</a></li>
+<li class="chapter" data-level="5.8" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#visualizing-population-growth"><i class="fa fa-check"></i><b>5.8</b> Visualizing Population Growth</a></li>
+<li class="chapter" data-level="5.9" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#understanding-growth"><i class="fa fa-check"></i><b>5.9</b> Understanding Growth</a></li>
+<li class="chapter" data-level="5.10" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#understanding-leakage"><i class="fa fa-check"></i><b>5.10</b> Understanding Leakage</a></li>
+<li class="chapter" data-level="5.11" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#experiment-exploring-leakage"><i class="fa fa-check"></i><b>5.11</b> Experiment: Exploring Leakage</a></li>
+<li class="chapter" data-level="5.12" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#the-trade-off-between-openness-and-isolation"><i class="fa fa-check"></i><b>5.12</b> The Trade-Off Between Openness and Isolation</a></li>
+<li class="chapter" data-level="5.13" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#division-and-reproduction"><i class="fa fa-check"></i><b>5.13</b> Division and Reproduction</a></li>
+<li class="chapter" data-level="5.14" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#selection-among-protocells"><i class="fa fa-check"></i><b>5.14</b> Selection Among Protocells</a></li>
+<li class="chapter" data-level="5.15" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#the-hypercycle-and-cooperative-systems"><i class="fa fa-check"></i><b>5.15</b> The Hypercycle and Cooperative Systems</a></li>
+<li class="chapter" data-level="5.16" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#interpreting-simulation-results-1"><i class="fa fa-check"></i><b>5.16</b> Interpreting Simulation Results</a>
+<ul>
+<li class="chapter" data-level="5.16.1" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#increasing-protocell-numbers"><i class="fa fa-check"></i><b>5.16.1</b> Increasing Protocell Numbers</a></li>
+<li class="chapter" data-level="5.16.2" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#stable-populations"><i class="fa fa-check"></i><b>5.16.2</b> Stable Populations</a></li>
+<li class="chapter" data-level="5.16.3" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#declining-populations"><i class="fa fa-check"></i><b>5.16.3</b> Declining Populations</a></li>
+</ul></li>
+<li class="chapter" data-level="5.17" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#limitations-of-the-model-2"><i class="fa fa-check"></i><b>5.17</b> Limitations of the Model</a></li>
+<li class="chapter" data-level="5.18" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#connections-to-other-chapters-1"><i class="fa fa-check"></i><b>5.18</b> Connections to Other Chapters</a></li>
+<li class="chapter" data-level="5.19" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#key-takeaways-2"><i class="fa fa-check"></i><b>5.19</b> Key Takeaways</a></li>
+<li class="chapter" data-level="5.20" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#suggested-readings-2"><i class="fa fa-check"></i><b>5.20</b> Suggested Readings</a></li>
+<li class="chapter" data-level="5.21" data-path="protocells-and-compartmentalization.html"><a href="protocells-and-compartmentalization.html#reflection-questions-4"><i class="fa fa-check"></i><b>5.21</b> Reflection Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html"><i class="fa fa-check"></i><b>6</b> Autocatalytic Networks</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#why-autocatalytic-networks-matter"><i class="fa fa-check"></i><b>6.1</b> Why Autocatalytic Networks Matter</a></li>
+<li class="chapter" data-level="6.2" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#what-is-catalysis"><i class="fa fa-check"></i><b>6.2</b> What Is Catalysis?</a></li>
+<li class="chapter" data-level="6.3" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#what-is-an-autocatalytic-network"><i class="fa fa-check"></i><b>6.3</b> What Is an Autocatalytic Network?</a></li>
+<li class="chapter" data-level="6.4" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#historical-background"><i class="fa fa-check"></i><b>6.4</b> Historical Background</a></li>
+<li class="chapter" data-level="6.5" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#network-first-versus-replication-first-models"><i class="fa fa-check"></i><b>6.5</b> Network-First Versus Replication-First Models</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#replication-first-models"><i class="fa fa-check"></i><b>6.5.1</b> Replication-First Models</a></li>
+<li class="chapter" data-level="6.5.2" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#network-first-models"><i class="fa fa-check"></i><b>6.5.2</b> Network-First Models</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#emergence-in-chemical-networks"><i class="fa fa-check"></i><b>6.6</b> Emergence in Chemical Networks</a></li>
+<li class="chapter" data-level="6.7" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#conceptual-model-4"><i class="fa fa-check"></i><b>6.7</b> Conceptual Model</a></li>
+<li class="chapter" data-level="6.8" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#creating-an-autocatalytic-network"><i class="fa fa-check"></i><b>6.8</b> Creating an Autocatalytic Network</a></li>
+<li class="chapter" data-level="6.9" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#understanding-the-catalysis-matrix"><i class="fa fa-check"></i><b>6.9</b> Understanding the Catalysis Matrix</a></li>
+<li class="chapter" data-level="6.10" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#visualizing-molecular-dynamics"><i class="fa fa-check"></i><b>6.10</b> Visualizing Molecular Dynamics</a></li>
+<li class="chapter" data-level="6.11" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#feedback-loops"><i class="fa fa-check"></i><b>6.11</b> Feedback Loops</a>
+<ul>
+<li class="chapter" data-level="6.11.1" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#positive-feedback"><i class="fa fa-check"></i><b>6.11.1</b> Positive Feedback</a></li>
+<li class="chapter" data-level="6.11.2" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#negative-feedback"><i class="fa fa-check"></i><b>6.11.2</b> Negative Feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#network-connectivity"><i class="fa fa-check"></i><b>6.12</b> Network Connectivity</a></li>
+<li class="chapter" data-level="6.13" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#sparse-versus-dense-networks"><i class="fa fa-check"></i><b>6.13</b> Sparse Versus Dense Networks</a></li>
+<li class="chapter" data-level="6.14" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#the-autocatalytic-threshold"><i class="fa fa-check"></i><b>6.14</b> The Autocatalytic Threshold</a></li>
+<li class="chapter" data-level="6.15" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#autocatalytic-networks-and-evolution"><i class="fa fa-check"></i><b>6.15</b> Autocatalytic Networks and Evolution</a></li>
+<li class="chapter" data-level="6.16" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#networks-inside-protocells"><i class="fa fa-check"></i><b>6.16</b> Networks Inside Protocells</a></li>
+<li class="chapter" data-level="6.17" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#interpreting-simulation-results-2"><i class="fa fa-check"></i><b>6.17</b> Interpreting Simulation Results</a>
+<ul>
+<li class="chapter" data-level="6.17.1" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#stable-abundances"><i class="fa fa-check"></i><b>6.17.1</b> Stable Abundances</a></li>
+<li class="chapter" data-level="6.17.2" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#increasing-abundances"><i class="fa fa-check"></i><b>6.17.2</b> Increasing Abundances</a></li>
+<li class="chapter" data-level="6.17.3" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#large-fluctuations"><i class="fa fa-check"></i><b>6.17.3</b> Large Fluctuations</a></li>
+<li class="chapter" data-level="6.17.4" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#collapse-of-components"><i class="fa fa-check"></i><b>6.17.4</b> Collapse of Components</a></li>
+</ul></li>
+<li class="chapter" data-level="6.18" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#limitations-of-the-model-3"><i class="fa fa-check"></i><b>6.18</b> Limitations of the Model</a></li>
+<li class="chapter" data-level="6.19" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#connections-to-other-chapters-2"><i class="fa fa-check"></i><b>6.19</b> Connections to Other Chapters</a></li>
+<li class="chapter" data-level="6.20" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#key-takeaways-3"><i class="fa fa-check"></i><b>6.20</b> Key Takeaways</a></li>
+<li class="chapter" data-level="6.21" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#suggested-readings-3"><i class="fa fa-check"></i><b>6.21</b> Suggested Readings</a></li>
+<li class="chapter" data-level="6.22" data-path="autocatalytic-networks.html"><a href="autocatalytic-networks.html#reflection-questions-5"><i class="fa fa-check"></i><b>6.22</b> Reflection Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html"><i class="fa fa-check"></i><b>7</b> Comparing Origin-of-Life Frameworks</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#why-this-chapter-matters"><i class="fa fa-check"></i><b>7.1</b> Why This Chapter Matters</a></li>
+<li class="chapter" data-level="7.2" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#the-central-problem"><i class="fa fa-check"></i><b>7.2</b> The Central Problem</a></li>
+<li class="chapter" data-level="7.3" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#major-origin-of-life-frameworks"><i class="fa fa-check"></i><b>7.3</b> Major Origin-of-Life Frameworks</a></li>
+<li class="chapter" data-level="7.4" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#rna-world"><i class="fa fa-check"></i><b>7.4</b> RNA World</a></li>
+<li class="chapter" data-level="7.5" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-rna-world-explains-well"><i class="fa fa-check"></i><b>7.5</b> What RNA World Explains Well</a></li>
+<li class="chapter" data-level="7.6" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-rna-world-struggles-to-explain"><i class="fa fa-check"></i><b>7.6</b> What RNA World Struggles to Explain</a></li>
+<li class="chapter" data-level="7.7" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#rna-world-in-lifesimulator"><i class="fa fa-check"></i><b>7.7</b> RNA World in lifesimulatoR</a></li>
+<li class="chapter" data-level="7.8" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#interpretation"><i class="fa fa-check"></i><b>7.8</b> Interpretation</a></li>
+<li class="chapter" data-level="7.9" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#metabolism-first"><i class="fa fa-check"></i><b>7.9</b> Metabolism First</a></li>
+<li class="chapter" data-level="7.10" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-metabolism-first-explains-well"><i class="fa fa-check"></i><b>7.10</b> What Metabolism First Explains Well</a></li>
+<li class="chapter" data-level="7.11" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-metabolism-first-struggles-to-explain"><i class="fa fa-check"></i><b>7.11</b> What Metabolism First Struggles to Explain</a></li>
+<li class="chapter" data-level="7.12" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#autocatalytic-set-theory"><i class="fa fa-check"></i><b>7.12</b> Autocatalytic Set Theory</a></li>
+<li class="chapter" data-level="7.13" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-autocatalytic-sets-explain-well"><i class="fa fa-check"></i><b>7.13</b> What Autocatalytic Sets Explain Well</a></li>
+<li class="chapter" data-level="7.14" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-autocatalytic-sets-struggle-to-explain"><i class="fa fa-check"></i><b>7.14</b> What Autocatalytic Sets Struggle to Explain</a></li>
+<li class="chapter" data-level="7.15" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#autocatalytic-networks-in-lifesimulator"><i class="fa fa-check"></i><b>7.15</b> Autocatalytic Networks in lifesimulatoR</a></li>
+<li class="chapter" data-level="7.16" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#interpretation-1"><i class="fa fa-check"></i><b>7.16</b> Interpretation</a></li>
+<li class="chapter" data-level="7.17" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#protocell-first"><i class="fa fa-check"></i><b>7.17</b> Protocell First</a></li>
+<li class="chapter" data-level="7.18" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-protocell-models-explain-well"><i class="fa fa-check"></i><b>7.18</b> What Protocell Models Explain Well</a></li>
+<li class="chapter" data-level="7.19" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-protocell-models-struggle-to-explain"><i class="fa fa-check"></i><b>7.19</b> What Protocell Models Struggle to Explain</a></li>
+<li class="chapter" data-level="7.20" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#protocells-in-lifesimulator"><i class="fa fa-check"></i><b>7.20</b> Protocells in lifesimulatoR</a></li>
+<li class="chapter" data-level="7.21" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#interpretation-2"><i class="fa fa-check"></i><b>7.21</b> Interpretation</a></li>
+<li class="chapter" data-level="7.22" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#the-chicken-and-egg-problem"><i class="fa fa-check"></i><b>7.22</b> The Chicken-and-Egg Problem</a></li>
+<li class="chapter" data-level="7.23" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#possible-sequences"><i class="fa fa-check"></i><b>7.23</b> Possible Sequences</a>
+<ul>
+<li class="chapter" data-level="7.23.1" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#rna-world-1"><i class="fa fa-check"></i><b>7.23.1</b> RNA World</a></li>
+<li class="chapter" data-level="7.23.2" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#metabolism-first-1"><i class="fa fa-check"></i><b>7.23.2</b> Metabolism First</a></li>
+<li class="chapter" data-level="7.23.3" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#protocell-first-1"><i class="fa fa-check"></i><b>7.23.3</b> Protocell First</a></li>
+<li class="chapter" data-level="7.23.4" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#autocatalytic-sets"><i class="fa fa-check"></i><b>7.23.4</b> Autocatalytic Sets</a></li>
+</ul></li>
+<li class="chapter" data-level="7.24" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#comparing-strengths-and-limitations"><i class="fa fa-check"></i><b>7.24</b> Comparing Strengths and Limitations</a></li>
+<li class="chapter" data-level="7.25" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#are-these-theories-competitors"><i class="fa fa-check"></i><b>7.25</b> Are These Theories Competitors?</a></li>
+<li class="chapter" data-level="7.26" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#toward-a-hybrid-model"><i class="fa fa-check"></i><b>7.26</b> Toward a Hybrid Model</a></li>
+<li class="chapter" data-level="7.27" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#conceptual-map"><i class="fa fa-check"></i><b>7.27</b> Conceptual Map</a></li>
+<li class="chapter" data-level="7.28" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#package-comparison"><i class="fa fa-check"></i><b>7.28</b> Package Comparison</a>
+<ul>
+<li class="chapter" data-level="7.28.1" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#molecular-evolution-1"><i class="fa fa-check"></i><b>7.28.1</b> Molecular Evolution</a></li>
+<li class="chapter" data-level="7.28.2" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#protocells"><i class="fa fa-check"></i><b>7.28.2</b> Protocells</a></li>
+<li class="chapter" data-level="7.28.3" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#autocatalytic-networks-1"><i class="fa fa-check"></i><b>7.28.3</b> Autocatalytic Networks</a></li>
+</ul></li>
+<li class="chapter" data-level="7.29" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-a-complete-model-would-need"><i class="fa fa-check"></i><b>7.29</b> What a Complete Model Would Need</a></li>
+<li class="chapter" data-level="7.30" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#open-questions-in-origin-of-life-research"><i class="fa fa-check"></i><b>7.30</b> Open Questions in Origin-of-Life Research</a>
+<ul>
+<li class="chapter" data-level="7.30.1" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#what-is-life"><i class="fa fa-check"></i><b>7.30.1</b> What Is Life?</a></li>
+<li class="chapter" data-level="7.30.2" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#how-did-information-first-emerge"><i class="fa fa-check"></i><b>7.30.2</b> How Did Information First Emerge?</a></li>
+<li class="chapter" data-level="7.30.3" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#how-did-metabolism-begin"><i class="fa fa-check"></i><b>7.30.3</b> How Did Metabolism Begin?</a></li>
+<li class="chapter" data-level="7.30.4" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#how-did-compartments-arise"><i class="fa fa-check"></i><b>7.30.4</b> How Did Compartments Arise?</a></li>
+<li class="chapter" data-level="7.30.5" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#was-the-origin-of-life-inevitable"><i class="fa fa-check"></i><b>7.30.5</b> Was the Origin of Life Inevitable?</a></li>
+<li class="chapter" data-level="7.30.6" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#is-life-common-in-the-universe"><i class="fa fa-check"></i><b>7.30.6</b> Is Life Common in the Universe?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.31" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#future-directions"><i class="fa fa-check"></i><b>7.31</b> Future Directions</a>
+<ul>
+<li class="chapter" data-level="7.31.1" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#experimental-advances"><i class="fa fa-check"></i><b>7.31.1</b> Experimental Advances</a></li>
+<li class="chapter" data-level="7.31.2" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#computational-advances"><i class="fa fa-check"></i><b>7.31.2</b> Computational Advances</a></li>
+<li class="chapter" data-level="7.31.3" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#future-directions-for-lifesimulator"><i class="fa fa-check"></i><b>7.31.3</b> Future Directions for lifesimulatoR</a></li>
+</ul></li>
+<li class="chapter" data-level="7.32" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#final-reflections"><i class="fa fa-check"></i><b>7.32</b> Final Reflections</a></li>
+<li class="chapter" data-level="7.33" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#key-takeaways-4"><i class="fa fa-check"></i><b>7.33</b> Key Takeaways</a></li>
+<li class="chapter" data-level="7.34" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#suggested-readings-4"><i class="fa fa-check"></i><b>7.34</b> Suggested Readings</a></li>
+<li class="chapter" data-level="7.35" data-path="comparing-origin-of-life-frameworks.html"><a href="comparing-origin-of-life-frameworks.html#reflection-questions-6"><i class="fa fa-check"></i><b>7.35</b> Reflection Questions</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html"><i class="fa fa-check"></i><b>8</b> Appendix A: Package Function Reference</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#purpose-of-this-appendix"><i class="fa fa-check"></i><b>8.1</b> Purpose of This Appendix</a></li>
+<li class="chapter" data-level="8.2" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#how-the-package-is-organized"><i class="fa fa-check"></i><b>8.2</b> How the Package is Organized</a></li>
+<li class="chapter" data-level="8.3" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#a-typical-workflow"><i class="fa fa-check"></i><b>8.3</b> A Typical Workflow</a></li>
+<li class="chapter" data-level="8.4" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#package-workflow-diagram"><i class="fa fa-check"></i><b>8.4</b> Package Workflow Diagram</a></li>
+<li class="chapter" data-level="8.5" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#molecular-evolution-functions"><i class="fa fa-check"></i><b>8.5</b> Molecular Evolution Functions</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#create_prebiotic_pool"><i class="fa fa-check"></i><b>8.5.1</b> create_prebiotic_pool()</a></li>
+<li class="chapter" data-level="8.5.2" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#molecule_fitness"><i class="fa fa-check"></i><b>8.5.2</b> molecule_fitness()</a></li>
+<li class="chapter" data-level="8.5.3" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#replicate_molecules"><i class="fa fa-check"></i><b>8.5.3</b> replicate_molecules()</a></li>
+<li class="chapter" data-level="8.5.4" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#mutate_sequence"><i class="fa fa-check"></i><b>8.5.4</b> mutate_sequence()</a></li>
+<li class="chapter" data-level="8.5.5" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#mutate_population"><i class="fa fa-check"></i><b>8.5.5</b> mutate_population()</a></li>
+<li class="chapter" data-level="8.5.6" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#evolve_generation"><i class="fa fa-check"></i><b>8.5.6</b> evolve_generation()</a></li>
+<li class="chapter" data-level="8.5.7" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#simulate_abiogenesis"><i class="fa fa-check"></i><b>8.5.7</b> simulate_abiogenesis()</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#diversity-and-complexity-functions"><i class="fa fa-check"></i><b>8.6</b> Diversity and Complexity Functions</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#summarize_molecules"><i class="fa fa-check"></i><b>8.6.1</b> summarize_molecules()</a></li>
+<li class="chapter" data-level="8.6.2" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#shannon_entropy"><i class="fa fa-check"></i><b>8.6.2</b> shannon_entropy()</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#visualization-functions"><i class="fa fa-check"></i><b>8.7</b> Visualization Functions</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#plot_simulation"><i class="fa fa-check"></i><b>8.7.1</b> plot_simulation()</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#alternative-origin-of-life-models"><i class="fa fa-check"></i><b>8.8</b> Alternative Origin-of-Life Models</a>
+<ul>
+<li class="chapter" data-level="8.8.1" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#protocell_simulation"><i class="fa fa-check"></i><b>8.8.1</b> protocell_simulation()</a></li>
+<li class="chapter" data-level="8.8.2" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#autocatalytic_network"><i class="fa fa-check"></i><b>8.8.2</b> autocatalytic_network()</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#function-relationship-map"><i class="fa fa-check"></i><b>8.9</b> Function Relationship Map</a></li>
+<li class="chapter" data-level="8.10" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#accessing-documentation"><i class="fa fa-check"></i><b>8.10</b> Accessing Documentation</a></li>
+<li class="chapter" data-level="8.11" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#current-scope-of-the-package"><i class="fa fa-check"></i><b>8.11</b> Current Scope of the Package</a></li>
+<li class="chapter" data-level="8.12" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#future-development"><i class="fa fa-check"></i><b>8.12</b> Future Development</a></li>
+<li class="chapter" data-level="8.13" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#suggested-reading"><i class="fa fa-check"></i><b>8.13</b> Suggested Reading</a></li>
+<li class="chapter" data-level="8.14" data-path="appendix-a-package-function-reference.html"><a href="appendix-a-package-function-reference.html#key-takeaways-5"><i class="fa fa-check"></i><b>8.14</b> Key Takeaways</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html"><i class="fa fa-check"></i><b>9</b> Appendix B: Classroom Labs and Exploratory Activities</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#purpose-of-this-appendix-1"><i class="fa fa-check"></i><b>9.1</b> Purpose of This Appendix</a></li>
+<li class="chapter" data-level="9.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-1-mutation-rate-and-evolutionary-change"><i class="fa fa-check"></i><b>9.2</b> Lab 1: Mutation Rate and Evolutionary Change</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background"><i class="fa fa-check"></i><b>9.2.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.2.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal"><i class="fa fa-check"></i><b>9.2.2</b> Goal</a></li>
+<li class="chapter" data-level="9.2.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity"><i class="fa fa-check"></i><b>9.2.3</b> Activity</a></li>
+<li class="chapter" data-level="9.2.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions"><i class="fa fa-check"></i><b>9.2.4</b> Questions</a></li>
+<li class="chapter" data-level="9.2.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension"><i class="fa fa-check"></i><b>9.2.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-2-selection-strength-and-adaptation"><i class="fa fa-check"></i><b>9.3</b> Lab 2: Selection Strength and Adaptation</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-1"><i class="fa fa-check"></i><b>9.3.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.3.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-1"><i class="fa fa-check"></i><b>9.3.2</b> Goal</a></li>
+<li class="chapter" data-level="9.3.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-1"><i class="fa fa-check"></i><b>9.3.3</b> Activity</a></li>
+<li class="chapter" data-level="9.3.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-1"><i class="fa fa-check"></i><b>9.3.4</b> Questions</a></li>
+<li class="chapter" data-level="9.3.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-1"><i class="fa fa-check"></i><b>9.3.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-3-diversity-versus-selection"><i class="fa fa-check"></i><b>9.4</b> Lab 3: Diversity Versus Selection</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-2"><i class="fa fa-check"></i><b>9.4.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.4.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-2"><i class="fa fa-check"></i><b>9.4.2</b> Goal</a></li>
+<li class="chapter" data-level="9.4.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-2"><i class="fa fa-check"></i><b>9.4.3</b> Activity</a></li>
+<li class="chapter" data-level="9.4.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-2"><i class="fa fa-check"></i><b>9.4.4</b> Questions</a></li>
+<li class="chapter" data-level="9.4.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-2"><i class="fa fa-check"></i><b>9.4.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-4-protocell-leakage-and-compartment-stability"><i class="fa fa-check"></i><b>9.5</b> Lab 4: Protocell Leakage and Compartment Stability</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-3"><i class="fa fa-check"></i><b>9.5.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.5.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-3"><i class="fa fa-check"></i><b>9.5.2</b> Goal</a></li>
+<li class="chapter" data-level="9.5.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-3"><i class="fa fa-check"></i><b>9.5.3</b> Activity</a></li>
+<li class="chapter" data-level="9.5.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-3"><i class="fa fa-check"></i><b>9.5.4</b> Questions</a></li>
+<li class="chapter" data-level="9.5.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-3"><i class="fa fa-check"></i><b>9.5.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-5-autocatalytic-network-connectivity"><i class="fa fa-check"></i><b>9.6</b> Lab 5: Autocatalytic Network Connectivity</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-4"><i class="fa fa-check"></i><b>9.6.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.6.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-4"><i class="fa fa-check"></i><b>9.6.2</b> Goal</a></li>
+<li class="chapter" data-level="9.6.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-4"><i class="fa fa-check"></i><b>9.6.3</b> Activity</a></li>
+<li class="chapter" data-level="9.6.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-4"><i class="fa fa-check"></i><b>9.6.4</b> Questions</a></li>
+<li class="chapter" data-level="9.6.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-4"><i class="fa fa-check"></i><b>9.6.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-6-comparing-origin-of-life-frameworks"><i class="fa fa-check"></i><b>9.7</b> Lab 6: Comparing Origin-of-Life Frameworks</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-5"><i class="fa fa-check"></i><b>9.7.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.7.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-5"><i class="fa fa-check"></i><b>9.7.2</b> Goal</a></li>
+<li class="chapter" data-level="9.7.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-5"><i class="fa fa-check"></i><b>9.7.3</b> Activity</a></li>
+<li class="chapter" data-level="9.7.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-5"><i class="fa fa-check"></i><b>9.7.4</b> Questions</a></li>
+<li class="chapter" data-level="9.7.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-5"><i class="fa fa-check"></i><b>9.7.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.8" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-7-design-your-own-origin-of-life-model"><i class="fa fa-check"></i><b>9.8</b> Lab 7: Design Your Own Origin-of-Life Model</a>
+<ul>
+<li class="chapter" data-level="9.8.1" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-6"><i class="fa fa-check"></i><b>9.8.1</b> Scientific Background</a></li>
+<li class="chapter" data-level="9.8.2" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-6"><i class="fa fa-check"></i><b>9.8.2</b> Goal</a></li>
+<li class="chapter" data-level="9.8.3" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-6"><i class="fa fa-check"></i><b>9.8.3</b> Activity</a></li>
+<li class="chapter" data-level="9.8.4" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-6"><i class="fa fa-check"></i><b>9.8.4</b> Questions</a></li>
+<li class="chapter" data-level="9.8.5" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-6"><i class="fa fa-check"></i><b>9.8.5</b> Extension</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#assessment-ideas"><i class="fa fa-check"></i><b>9.9</b> Assessment Ideas</a></li>
+<li class="chapter" data-level="9.10" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#suggested-capstone-project"><i class="fa fa-check"></i><b>9.10</b> Suggested Capstone Project</a></li>
+<li class="chapter" data-level="9.11" data-path="appendix-b-classroom-labs-and-exploratory-activities.html"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#key-takeaways-6"><i class="fa fa-check"></i><b>9.11</b> Key Takeaways</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html"><i class="fa fa-check"></i><b>10</b> Appendix C: Installation and Quick Start Guide</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#purpose-of-this-appendix-2"><i class="fa fa-check"></i><b>10.1</b> Purpose of This Appendix</a></li>
+<li class="chapter" data-level="10.2" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#step-1-install-r"><i class="fa fa-check"></i><b>10.2</b> Step 1: Install R</a></li>
+<li class="chapter" data-level="10.3" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#step-2-install-rstudio"><i class="fa fa-check"></i><b>10.3</b> Step 2: Install RStudio</a></li>
+<li class="chapter" data-level="10.4" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#step-3-install-required-packages"><i class="fa fa-check"></i><b>10.4</b> Step 3: Install Required Packages</a></li>
+<li class="chapter" data-level="10.5" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#step-4-install-lifesimulator"><i class="fa fa-check"></i><b>10.5</b> Step 4: Install lifesimulatoR</a></li>
+<li class="chapter" data-level="10.6" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#step-5-load-the-package"><i class="fa fa-check"></i><b>10.6</b> Step 5: Load the Package</a></li>
+<li class="chapter" data-level="10.7" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#your-first-simulation"><i class="fa fa-check"></i><b>10.7</b> Your First Simulation</a></li>
+<li class="chapter" data-level="10.8" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#create-your-first-plot"><i class="fa fa-check"></i><b>10.8</b> Create Your First Plot</a></li>
+<li class="chapter" data-level="10.9" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#exploring-diversity"><i class="fa fa-check"></i><b>10.9</b> Exploring Diversity</a></li>
+<li class="chapter" data-level="10.10" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#exploring-protocells"><i class="fa fa-check"></i><b>10.10</b> Exploring Protocells</a></li>
+<li class="chapter" data-level="10.11" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#exploring-autocatalytic-networks"><i class="fa fa-check"></i><b>10.11</b> Exploring Autocatalytic Networks</a></li>
+<li class="chapter" data-level="10.12" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#accessing-help"><i class="fa fa-check"></i><b>10.12</b> Accessing Help</a></li>
+<li class="chapter" data-level="10.13" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#common-problems-and-solutions"><i class="fa fa-check"></i><b>10.13</b> Common Problems and Solutions</a>
+<ul>
+<li class="chapter" data-level="10.13.1" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#package-not-found"><i class="fa fa-check"></i><b>10.13.1</b> Package Not Found</a></li>
+<li class="chapter" data-level="10.13.2" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#function-not-found"><i class="fa fa-check"></i><b>10.13.2</b> Function Not Found</a></li>
+<li class="chapter" data-level="10.13.3" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#plotting-error"><i class="fa fa-check"></i><b>10.13.3</b> Plotting Error</a></li>
+<li class="chapter" data-level="10.13.4" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#shannon-entropy-error"><i class="fa fa-check"></i><b>10.13.4</b> Shannon Entropy Error</a></li>
+</ul></li>
+<li class="chapter" data-level="10.14" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#suggested-learning-path"><i class="fa fa-check"></i><b>10.14</b> Suggested Learning Path</a></li>
+<li class="chapter" data-level="10.15" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#next-steps"><i class="fa fa-check"></i><b>10.15</b> Next Steps</a></li>
+<li class="chapter" data-level="10.16" data-path="appendix-c-installation-and-quick-start-guide.html"><a href="appendix-c-installation-and-quick-start-guide.html#key-takeaways-7"><i class="fa fa-check"></i><b>10.16</b> Key Takeaways</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="selected-references-and-further-reading.html"><a href="selected-references-and-further-reading.html"><i class="fa fa-check"></i><b>11</b> Selected References and Further Reading</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="selected-references-and-further-reading.html"><a href="selected-references-and-further-reading.html#origin-of-life-and-general-frameworks"><i class="fa fa-check"></i><b>11.1</b> Origin of Life and General Frameworks</a></li>
+<li class="chapter" data-level="11.2" data-path="selected-references-and-further-reading.html"><a href="selected-references-and-further-reading.html#rna-world-and-molecular-evolution"><i class="fa fa-check"></i><b>11.2</b> RNA World and Molecular Evolution</a></li>
+<li class="chapter" data-level="11.3" data-path="selected-references-and-further-reading.html"><a href="selected-references-and-further-reading.html#protocells-and-synthetic-life"><i class="fa fa-check"></i><b>11.3</b> Protocells and Synthetic Life</a></li>
+<li class="chapter" data-level="11.4" data-path="selected-references-and-further-reading.html"><a href="selected-references-and-further-reading.html#autocatalytic-networks-and-complexity"><i class="fa fa-check"></i><b>11.4</b> Autocatalytic Networks and Complexity</a></li>
+<li class="chapter" data-level="11.5" data-path="selected-references-and-further-reading.html"><a href="selected-references-and-further-reading.html#prebiotic-chemistry-and-early-earth-environments"><i class="fa fa-check"></i><b>11.5</b> Prebiotic Chemistry and Early Earth Environments</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">lifesimulatoR Book</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="appendix-b-classroom-labs-and-exploratory-activities" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Appendix B: Classroom Labs and Exploratory Activities<a href="appendix-b-classroom-labs-and-exploratory-activities.html#appendix-b-classroom-labs-and-exploratory-activities" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="purpose-of-this-appendix-1" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Purpose of This Appendix<a href="appendix-b-classroom-labs-and-exploratory-activities.html#purpose-of-this-appendix-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The simulations in <code>lifesimulatoR</code> are designed not only to illustrate origin-of-life concepts but also to encourage exploration and scientific thinking.</p>
+<p>The activities in this appendix allow students to investigate how changing model parameters influences system behavior. The goal is not to discover the “correct” origin-of-life scenario, but rather to understand how variation, selection, organization, and emergence interact in simplified models.</p>
+<p>Each activity follows the scientific method:</p>
+<ol style="list-style-type: decimal">
+<li>Form a hypothesis.</li>
+<li>Run simulations.</li>
+<li>Observe results.</li>
+<li>Interpret patterns.</li>
+<li>Identify limitations.</li>
+<li>Propose improvements.</li>
+</ol>
+<p>These exercises can be used in classrooms, workshops, independent study projects, or science communication activities.</p>
+</div>
+<div id="lab-1-mutation-rate-and-evolutionary-change" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Lab 1: Mutation Rate and Evolutionary Change<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-1-mutation-rate-and-evolutionary-change" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Mutation introduces novelty into a population.</p>
+<p>Without mutation, evolution cannot explore new possibilities. However, excessive mutation may destroy useful information before selection can preserve it.</p>
+<p>This creates a classic evolutionary trade-off.</p>
+</div>
+<div id="goal" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Investigate how mutation rate affects molecular evolution.</p>
+</div>
+<div id="activity" class="section level3 hasAnchor" number="9.2.3">
+<h3><span class="header-section-number">9.2.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-1" tabindex="-1"></a>rates <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.01</span>, <span class="fl">0.05</span>, <span class="fl">0.20</span>)</span>
+<span id="cb90-2"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-2" tabindex="-1"></a></span>
+<span id="cb90-3"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-3" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">lapply</span>(rates, <span class="cf">function</span>(rate) {</span>
+<span id="cb90-4"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-4" tabindex="-1"></a>  <span class="fu">simulate_abiogenesis</span>(</span>
+<span id="cb90-5"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-5" tabindex="-1"></a>    <span class="at">n_molecules =</span> <span class="dv">100</span>,</span>
+<span id="cb90-6"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-6" tabindex="-1"></a>    <span class="at">generations =</span> <span class="dv">100</span>,</span>
+<span id="cb90-7"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-7" tabindex="-1"></a>    <span class="at">mutation_rate =</span> rate,</span>
+<span id="cb90-8"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-8" tabindex="-1"></a>    <span class="at">selection_strength =</span> <span class="dv">1</span>,</span>
+<span id="cb90-9"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-9" tabindex="-1"></a>    <span class="at">seed =</span> <span class="dv">123</span></span>
+<span id="cb90-10"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-10" tabindex="-1"></a>  )</span>
+<span id="cb90-11"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-11" tabindex="-1"></a>})</span>
+<span id="cb90-12"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-12" tabindex="-1"></a></span>
+<span id="cb90-13"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-13" tabindex="-1"></a><span class="fu">names</span>(results) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;mutation_&quot;</span>, rates)</span>
+<span id="cb90-14"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-14" tabindex="-1"></a></span>
+<span id="cb90-15"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb90-15" tabindex="-1"></a><span class="fu">lapply</span>(results, tail)</span></code></pre></div>
+<pre><code>## $mutation_0
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100          13         1.24         2        1.24
+## 2         96         100          13         1.24         2        1.24
+## 3         97         100          13         1.24         2        1.24
+## 4         98         100          13         1.24         2        1.24
+## 5         99         100          13         1.24         2        1.24
+## 6        100         100          13         1.24         2        1.24
+## 
+## $mutation_0.01
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100        11.4         1.24        42        1.25
+## 2         96         100        11.5         1.24        33        1.25
+## 3         97         100        11.5         1.24        35        1.25
+## 4         98         100        11.7         1.24        36        1.25
+## 5         99         100        11.8         1.24        37        1.25
+## 6        100         100        11.9         1.25        40        1.25
+## 
+## $mutation_0.05
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100          12         1.23        85        1.25
+## 2         96         100          12         1.23        82        1.25
+## 3         97         100          12         1.24        76        1.25
+## 4         98         100          12         1.25        77        1.25
+## 5         99         100          12         1.25        75        1.25
+## 6        100         100          12         1.25        74        1.25
+## 
+## $mutation_0.2
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100        12.8         1.23        99        1.25
+## 2         96         100        12.7         1.24       100        1.25
+## 3         97         100        12.7         1.23       100        1.25
+## 4         98         100        12.7         1.22       100        1.25
+## 5         99         100        12.5         1.24        99        1.25
+## 6        100         100        12.5         1.24        99        1.25</code></pre>
+</div>
+<div id="questions" class="section level3 hasAnchor" number="9.2.4">
+<h3><span class="header-section-number">9.2.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Which mutation rate produces the highest fitness?</li>
+<li>Which mutation rate produces the highest diversity?</li>
+<li>Is there a trade-off between diversity and fitness?</li>
+<li>What happens when mutation becomes extremely high?</li>
+<li>Can evolution occur without mutation?</li>
+</ol>
+</div>
+<div id="extension" class="section level3 hasAnchor" number="9.2.5">
+<h3><span class="header-section-number">9.2.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Try mutation rates above 0.20 and compare the outcomes.</p>
+</div>
+</div>
+<div id="lab-2-selection-strength-and-adaptation" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Lab 2: Selection Strength and Adaptation<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-2-selection-strength-and-adaptation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background-1" class="section level3 hasAnchor" number="9.3.1">
+<h3><span class="header-section-number">9.3.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Selection favors some variants over others.</p>
+<p>Stronger selection increases differences among variants, while weaker selection allows more variants to persist.</p>
+</div>
+<div id="goal-1" class="section level3 hasAnchor" number="9.3.2">
+<h3><span class="header-section-number">9.3.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Explore how selection strength influences evolutionary outcomes.</p>
+</div>
+<div id="activity-1" class="section level3 hasAnchor" number="9.3.3">
+<h3><span class="header-section-number">9.3.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-1" tabindex="-1"></a>strengths <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">3</span>)</span>
+<span id="cb92-2"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-2" tabindex="-1"></a></span>
+<span id="cb92-3"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-3" tabindex="-1"></a>selection_results <span class="ot">&lt;-</span> <span class="fu">lapply</span>(strengths, <span class="cf">function</span>(s) {</span>
+<span id="cb92-4"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-4" tabindex="-1"></a>  <span class="fu">simulate_abiogenesis</span>(</span>
+<span id="cb92-5"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-5" tabindex="-1"></a>    <span class="at">n_molecules =</span> <span class="dv">100</span>,</span>
+<span id="cb92-6"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-6" tabindex="-1"></a>    <span class="at">generations =</span> <span class="dv">100</span>,</span>
+<span id="cb92-7"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-7" tabindex="-1"></a>    <span class="at">mutation_rate =</span> <span class="fl">0.02</span>,</span>
+<span id="cb92-8"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-8" tabindex="-1"></a>    <span class="at">selection_strength =</span> s,</span>
+<span id="cb92-9"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-9" tabindex="-1"></a>    <span class="at">seed =</span> <span class="dv">123</span></span>
+<span id="cb92-10"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-10" tabindex="-1"></a>  )</span>
+<span id="cb92-11"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-11" tabindex="-1"></a>})</span>
+<span id="cb92-12"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-12" tabindex="-1"></a></span>
+<span id="cb92-13"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-13" tabindex="-1"></a><span class="fu">names</span>(selection_results) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;selection_&quot;</span>, strengths)</span>
+<span id="cb92-14"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-14" tabindex="-1"></a></span>
+<span id="cb92-15"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb92-15" tabindex="-1"></a><span class="fu">lapply</span>(selection_results, tail)</span></code></pre></div>
+<pre><code>## $selection_0
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100        11.1         1.12        57        1.20
+## 2         96         100        11.0         1.11        54        1.20
+## 3         97         100        11.6         1.09        63        1.20
+## 4         98         100        11.5         1.07        60        1.20
+## 5         99         100        12.2         1.06        59        1.20
+## 6        100         100        12.2         1.04        64        1.20
+## 
+## $selection_0.5
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100          13         1.22        50        1.24
+## 2         96         100          13         1.23        49        1.24
+## 3         97         100          13         1.23        59        1.24
+## 4         98         100          13         1.23        57        1.24
+## 5         99         100          13         1.22        62        1.24
+## 6        100         100          13         1.22        63        1.24
+## 
+## $selection_1
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100        10.6         1.19        56        1.24
+## 2         96         100        10.9         1.19        55        1.24
+## 3         97         100        10.8         1.19        55        1.20
+## 4         98         100        10.8         1.19        51        1.20
+## 5         99         100        10.8         1.20        56        1.20
+## 6        100         100        10.8         1.20        56        1.20
+## 
+## $selection_3
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100          12         1.25        48        1.25
+## 2         96         100          12         1.25        51        1.25
+## 3         97         100          12         1.25        55        1.25
+## 4         98         100          12         1.25        54        1.25
+## 5         99         100          12         1.25        50        1.25
+## 6        100         100          12         1.25        45        1.25</code></pre>
+</div>
+<div id="questions-1" class="section level3 hasAnchor" number="9.3.4">
+<h3><span class="header-section-number">9.3.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>What happens when selection strength equals zero?</li>
+<li>Does stronger selection always increase fitness?</li>
+<li>How does diversity change as selection becomes stronger?</li>
+<li>Can strong selection reduce exploration of new possibilities?</li>
+</ol>
+</div>
+<div id="extension-1" class="section level3 hasAnchor" number="9.3.5">
+<h3><span class="header-section-number">9.3.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Plot diversity and fitness for each selection strength and compare the trajectories.</p>
+</div>
+</div>
+<div id="lab-3-diversity-versus-selection" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Lab 3: Diversity Versus Selection<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-3-diversity-versus-selection" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background-2" class="section level3 hasAnchor" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Mutation generates diversity, while selection often reduces diversity.</p>
+<p>Understanding the balance between these forces is a central problem in evolutionary theory.</p>
+</div>
+<div id="goal-2" class="section level3 hasAnchor" number="9.4.2">
+<h3><span class="header-section-number">9.4.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Explore how diversity changes under different levels of selection.</p>
+</div>
+<div id="activity-2" class="section level3 hasAnchor" number="9.4.3">
+<h3><span class="header-section-number">9.4.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-1" tabindex="-1"></a>strengths <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb94-2"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-2" tabindex="-1"></a></span>
+<span id="cb94-3"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-3" tabindex="-1"></a>diversity_results <span class="ot">&lt;-</span> <span class="fu">lapply</span>(strengths, <span class="cf">function</span>(s) {</span>
+<span id="cb94-4"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-4" tabindex="-1"></a>  <span class="fu">simulate_abiogenesis</span>(</span>
+<span id="cb94-5"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-5" tabindex="-1"></a>    <span class="at">n_molecules =</span> <span class="dv">100</span>,</span>
+<span id="cb94-6"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-6" tabindex="-1"></a>    <span class="at">generations =</span> <span class="dv">100</span>,</span>
+<span id="cb94-7"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-7" tabindex="-1"></a>    <span class="at">mutation_rate =</span> <span class="fl">0.02</span>,</span>
+<span id="cb94-8"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-8" tabindex="-1"></a>    <span class="at">selection_strength =</span> s,</span>
+<span id="cb94-9"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-9" tabindex="-1"></a>    <span class="at">seed =</span> <span class="dv">123</span></span>
+<span id="cb94-10"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-10" tabindex="-1"></a>  )</span>
+<span id="cb94-11"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-11" tabindex="-1"></a>})</span>
+<span id="cb94-12"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-12" tabindex="-1"></a></span>
+<span id="cb94-13"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-13" tabindex="-1"></a><span class="fu">names</span>(diversity_results) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;selection_&quot;</span>, strengths)</span>
+<span id="cb94-14"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-14" tabindex="-1"></a></span>
+<span id="cb94-15"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb94-15" tabindex="-1"></a><span class="fu">lapply</span>(diversity_results, tail)</span></code></pre></div>
+<pre><code>## $selection_0
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100        11.1         1.12        57        1.20
+## 2         96         100        11.0         1.11        54        1.20
+## 3         97         100        11.6         1.09        63        1.20
+## 4         98         100        11.5         1.07        60        1.20
+## 5         99         100        12.2         1.06        59        1.20
+## 6        100         100        12.2         1.04        64        1.20
+## 
+## $selection_1
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100        10.6         1.19        56        1.24
+## 2         96         100        10.9         1.19        55        1.24
+## 3         97         100        10.8         1.19        55        1.20
+## 4         98         100        10.8         1.19        51        1.20
+## 5         99         100        10.8         1.20        56        1.20
+## 6        100         100        10.8         1.20        56        1.20
+## 
+## $selection_3
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100          12         1.25        48        1.25
+## 2         96         100          12         1.25        51        1.25
+## 3         97         100          12         1.25        55        1.25
+## 4         98         100          12         1.25        54        1.25
+## 5         99         100          12         1.25        50        1.25
+## 6        100         100          12         1.25        45        1.25
+## 
+## $selection_5
+## # A tibble: 6 × 6
+##   generation n_molecules mean_length mean_fitness diversity max_fitness
+##        &lt;int&gt;       &lt;int&gt;       &lt;dbl&gt;        &lt;dbl&gt;     &lt;int&gt;       &lt;dbl&gt;
+## 1         95         100          12         1.25        53        1.25
+## 2         96         100          12         1.25        50        1.25
+## 3         97         100          12         1.25        54        1.25
+## 4         98         100          12         1.25        62        1.25
+## 5         99         100          12         1.25        51        1.25
+## 6        100         100          12         1.25        53        1.25</code></pre>
+</div>
+<div id="questions-2" class="section level3 hasAnchor" number="9.4.4">
+<h3><span class="header-section-number">9.4.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Does strong selection always reduce diversity?</li>
+<li>Can diversity remain high while fitness increases?</li>
+<li>Why might evolution require both diversity and selection?</li>
+<li>Is the most diverse population necessarily the most successful?</li>
+</ol>
+</div>
+<div id="extension-2" class="section level3 hasAnchor" number="9.4.5">
+<h3><span class="header-section-number">9.4.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Calculate diversity through time and compare different selection strengths.</p>
+</div>
+</div>
+<div id="lab-4-protocell-leakage-and-compartment-stability" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> Lab 4: Protocell Leakage and Compartment Stability<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-4-protocell-leakage-and-compartment-stability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background-3" class="section level3 hasAnchor" number="9.5.1">
+<h3><span class="header-section-number">9.5.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Early compartments likely faced a difficult challenge.</p>
+<p>They needed to retain useful molecules while still exchanging materials with the environment.</p>
+<p>Too much leakage may prevent growth. Too little exchange may limit access to resources.</p>
+</div>
+<div id="goal-3" class="section level3 hasAnchor" number="9.5.2">
+<h3><span class="header-section-number">9.5.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Explore how membrane leakage affects protocell populations.</p>
+</div>
+<div id="activity-3" class="section level3 hasAnchor" number="9.5.3">
+<h3><span class="header-section-number">9.5.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-1" tabindex="-1"></a>leakages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.01</span>, <span class="fl">0.03</span>, <span class="fl">0.10</span>, <span class="fl">0.20</span>)</span>
+<span id="cb96-2"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-2" tabindex="-1"></a></span>
+<span id="cb96-3"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-3" tabindex="-1"></a>leakage_results <span class="ot">&lt;-</span> <span class="fu">lapply</span>(leakages, <span class="cf">function</span>(l) {</span>
+<span id="cb96-4"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-4" tabindex="-1"></a>  <span class="fu">protocell_simulation</span>(</span>
+<span id="cb96-5"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-5" tabindex="-1"></a>    <span class="at">n_cells =</span> <span class="dv">20</span>,</span>
+<span id="cb96-6"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-6" tabindex="-1"></a>    <span class="at">steps =</span> <span class="dv">100</span>,</span>
+<span id="cb96-7"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-7" tabindex="-1"></a>    <span class="at">leakage_rate =</span> l,</span>
+<span id="cb96-8"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-8" tabindex="-1"></a>    <span class="at">seed =</span> <span class="dv">123</span></span>
+<span id="cb96-9"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-9" tabindex="-1"></a>  )</span>
+<span id="cb96-10"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-10" tabindex="-1"></a>})</span>
+<span id="cb96-11"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-11" tabindex="-1"></a></span>
+<span id="cb96-12"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-12" tabindex="-1"></a><span class="fu">names</span>(leakage_results) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;leakage_&quot;</span>, leakages)</span>
+<span id="cb96-13"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-13" tabindex="-1"></a></span>
+<span id="cb96-14"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb96-14" tabindex="-1"></a><span class="fu">lapply</span>(leakage_results, tail)</span></code></pre></div>
+<pre><code>## $leakage_0.01
+## # A tibble: 6 × 4
+##    step n_cells mean_abundance max_abundance
+##   &lt;int&gt;   &lt;int&gt;          &lt;dbl&gt;         &lt;dbl&gt;
+## 1    95      74           6.65          9.73
+## 2    96      74           6.78          9.88
+## 3    97      75           6.84          9.95
+## 4    98      76           6.89          9.85
+## 5    99      77           6.95         10.00
+## 6   100      79           6.91          9.89
+## 
+## $leakage_0.03
+## # A tibble: 6 × 4
+##    step n_cells mean_abundance max_abundance
+##   &lt;int&gt;   &lt;int&gt;          &lt;dbl&gt;         &lt;dbl&gt;
+## 1    95      20           6.84          7.44
+## 2    96      20           6.85          7.41
+## 3    97      20           6.87          7.43
+## 4    98      20           6.89          7.48
+## 5    99      20           6.91          7.56
+## 6   100      20           6.90          7.49
+## 
+## $leakage_0.1
+## # A tibble: 6 × 4
+##    step n_cells mean_abundance max_abundance
+##   &lt;int&gt;   &lt;int&gt;          &lt;dbl&gt;         &lt;dbl&gt;
+## 1    95      20           2.00          2.28
+## 2    96      20           2.00          2.32
+## 3    97      20           2.01          2.39
+## 4    98      20           2.01          2.35
+## 5    99      20           2.02          2.45
+## 6   100      20           2.00          2.35
+## 
+## $leakage_0.2
+## # A tibble: 6 × 4
+##    step n_cells mean_abundance max_abundance
+##   &lt;int&gt;   &lt;int&gt;          &lt;dbl&gt;         &lt;dbl&gt;
+## 1    95      20          0.895          1.11
+## 2    96      20          0.898          1.13
+## 3    97      20          0.900          1.21
+## 4    98      20          0.904          1.14
+## 5    99      20          0.911          1.21
+## 6   100      20          0.892          1.10</code></pre>
+</div>
+<div id="questions-3" class="section level3 hasAnchor" number="9.5.4">
+<h3><span class="header-section-number">9.5.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>What happens when leakage becomes very high?</li>
+<li>Why might some leakage be beneficial?</li>
+<li>What membrane properties would be favored by selection?</li>
+<li>How might real protocells balance retention and exchange?</li>
+</ol>
+</div>
+<div id="extension-3" class="section level3 hasAnchor" number="9.5.5">
+<h3><span class="header-section-number">9.5.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Change both growth rate and leakage rate to explore interactions between them.</p>
+</div>
+</div>
+<div id="lab-5-autocatalytic-network-connectivity" class="section level2 hasAnchor" number="9.6">
+<h2><span class="header-section-number">9.6</span> Lab 5: Autocatalytic Network Connectivity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-5-autocatalytic-network-connectivity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background-4" class="section level3 hasAnchor" number="9.6.1">
+<h3><span class="header-section-number">9.6.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Autocatalytic networks become more interconnected as catalytic interactions increase.</p>
+<p>Highly connected networks may develop feedback loops and self-reinforcing behavior.</p>
+</div>
+<div id="goal-4" class="section level3 hasAnchor" number="9.6.2">
+<h3><span class="header-section-number">9.6.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Explore how network connectivity influences system dynamics.</p>
+</div>
+<div id="activity-4" class="section level3 hasAnchor" number="9.6.3">
+<h3><span class="header-section-number">9.6.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-1" tabindex="-1"></a>probabilities <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.05</span>, <span class="fl">0.10</span>, <span class="fl">0.20</span>, <span class="fl">0.40</span>)</span>
+<span id="cb98-2"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-2" tabindex="-1"></a></span>
+<span id="cb98-3"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-3" tabindex="-1"></a>network_results <span class="ot">&lt;-</span> <span class="fu">lapply</span>(probabilities, <span class="cf">function</span>(p) {</span>
+<span id="cb98-4"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-4" tabindex="-1"></a>  <span class="fu">autocatalytic_network</span>(</span>
+<span id="cb98-5"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-5" tabindex="-1"></a>    <span class="at">n_types =</span> <span class="dv">8</span>,</span>
+<span id="cb98-6"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-6" tabindex="-1"></a>    <span class="at">steps =</span> <span class="dv">50</span>,</span>
+<span id="cb98-7"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-7" tabindex="-1"></a>    <span class="at">catalysis_probability =</span> p,</span>
+<span id="cb98-8"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-8" tabindex="-1"></a>    <span class="at">seed =</span> <span class="dv">123</span></span>
+<span id="cb98-9"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-9" tabindex="-1"></a>  )</span>
+<span id="cb98-10"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-10" tabindex="-1"></a>})</span>
+<span id="cb98-11"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-11" tabindex="-1"></a></span>
+<span id="cb98-12"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-12" tabindex="-1"></a><span class="fu">names</span>(network_results) <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;catalysis_&quot;</span>, probabilities)</span>
+<span id="cb98-13"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-13" tabindex="-1"></a></span>
+<span id="cb98-14"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb98-14" tabindex="-1"></a><span class="fu">lapply</span>(network_results, <span class="cf">function</span>(x) <span class="fu">tail</span>(x<span class="sc">$</span>time_series))</span></code></pre></div>
+<pre><code>## $catalysis_0.05
+## # A tibble: 6 × 3
+##    step molecule abundance
+##   &lt;int&gt; &lt;chr&gt;        &lt;dbl&gt;
+## 1    50 M3            6.13
+## 2    50 M4            1.89
+## 3    50 M5           14.0 
+## 4    50 M6            1.77
+## 5    50 M7           14.0 
+## 6    50 M8            1.83
+## 
+## $catalysis_0.1
+## # A tibble: 6 × 3
+##    step molecule abundance
+##   &lt;int&gt; &lt;chr&gt;        &lt;dbl&gt;
+## 1    50 M3            6.13
+## 2    50 M4            1.89
+## 3    50 M5           14.0 
+## 4    50 M6            1.77
+## 5    50 M7           14.0 
+## 6    50 M8            6.06
+## 
+## $catalysis_0.2
+## # A tibble: 6 × 3
+##    step molecule abundance
+##   &lt;int&gt; &lt;chr&gt;        &lt;dbl&gt;
+## 1    50 M3            199.
+## 2    50 M4            208.
+## 3    50 M5            148.
+## 4    50 M6            271.
+## 5    50 M7            354.
+## 6    50 M8            366.
+## 
+## $catalysis_0.4
+## # A tibble: 6 × 3
+##    step molecule abundance
+##   &lt;int&gt; &lt;chr&gt;        &lt;dbl&gt;
+## 1    50 M3          48509.
+## 2    50 M4         156282.
+## 3    50 M5         234561.
+## 4    50 M6         225042.
+## 5    50 M7         194458.
+## 6    50 M8         221803.</code></pre>
+</div>
+<div id="questions-4" class="section level3 hasAnchor" number="9.6.4">
+<h3><span class="header-section-number">9.6.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>How do sparse and dense networks differ?</li>
+<li>Which networks appear more stable?</li>
+<li>Which networks show stronger feedback effects?</li>
+<li>What might happen if connectivity becomes extremely high?</li>
+</ol>
+</div>
+<div id="extension-4" class="section level3 hasAnchor" number="9.6.5">
+<h3><span class="header-section-number">9.6.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Experiment with larger numbers of molecule types.</p>
+</div>
+</div>
+<div id="lab-6-comparing-origin-of-life-frameworks" class="section level2 hasAnchor" number="9.7">
+<h2><span class="header-section-number">9.7</span> Lab 6: Comparing Origin-of-Life Frameworks<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-6-comparing-origin-of-life-frameworks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background-5" class="section level3 hasAnchor" number="9.7.1">
+<h3><span class="header-section-number">9.7.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Different origin-of-life theories emphasize different processes.</p>
+<p>This activity compares three major frameworks represented in the package.</p>
+</div>
+<div id="goal-5" class="section level3 hasAnchor" number="9.7.2">
+<h3><span class="header-section-number">9.7.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Compare molecular evolution, protocells, and autocatalytic networks.</p>
+</div>
+<div id="activity-5" class="section level3 hasAnchor" number="9.7.3">
+<h3><span class="header-section-number">9.7.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Run:</p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb100-1" tabindex="-1"></a><span class="fu">simulate_abiogenesis</span>()</span>
+<span id="cb100-2"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb100-2" tabindex="-1"></a></span>
+<span id="cb100-3"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb100-3" tabindex="-1"></a><span class="fu">protocell_simulation</span>()</span>
+<span id="cb100-4"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb100-4" tabindex="-1"></a></span>
+<span id="cb100-5"><a href="appendix-b-classroom-labs-and-exploratory-activities.html#cb100-5" tabindex="-1"></a><span class="fu">autocatalytic_network</span>()</span></code></pre></div>
+</div>
+<div id="questions-5" class="section level3 hasAnchor" number="9.7.4">
+<h3><span class="header-section-number">9.7.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Which origin-of-life framework does each simulation represent?</li>
+<li>What does each model explain particularly well?</li>
+<li>What does each model fail to explain?</li>
+<li>Which model seems most convincing?</li>
+<li>Could multiple frameworks be correct simultaneously?</li>
+</ol>
+</div>
+<div id="extension-5" class="section level3 hasAnchor" number="9.7.5">
+<h3><span class="header-section-number">9.7.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Create a comparison table summarizing strengths and weaknesses.</p>
+</div>
+</div>
+<div id="lab-7-design-your-own-origin-of-life-model" class="section level2 hasAnchor" number="9.8">
+<h2><span class="header-section-number">9.8</span> Lab 7: Design Your Own Origin-of-Life Model<a href="appendix-b-classroom-labs-and-exploratory-activities.html#lab-7-design-your-own-origin-of-life-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scientific-background-6" class="section level3 hasAnchor" number="9.8.1">
+<h3><span class="header-section-number">9.8.1</span> Scientific Background<a href="appendix-b-classroom-labs-and-exploratory-activities.html#scientific-background-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Real scientific research often involves designing new models rather than simply using existing ones.</p>
+</div>
+<div id="goal-6" class="section level3 hasAnchor" number="9.8.2">
+<h3><span class="header-section-number">9.8.2</span> Goal<a href="appendix-b-classroom-labs-and-exploratory-activities.html#goal-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Develop a conceptual next-generation origin-of-life simulation.</p>
+</div>
+<div id="activity-6" class="section level3 hasAnchor" number="9.8.3">
+<h3><span class="header-section-number">9.8.3</span> Activity<a href="appendix-b-classroom-labs-and-exploratory-activities.html#activity-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Students should design a hypothetical model that combines multiple concepts from the book.</p>
+<p>Possible components include:</p>
+<ul>
+<li>Mutation</li>
+<li>Selection</li>
+<li>Molecular diversity</li>
+<li>Protocells</li>
+<li>Autocatalytic networks</li>
+<li>Energy gradients</li>
+<li>Environmental cycles</li>
+<li>Spatial structure</li>
+</ul>
+</div>
+<div id="questions-6" class="section level3 hasAnchor" number="9.8.4">
+<h3><span class="header-section-number">9.8.4</span> Questions<a href="appendix-b-classroom-labs-and-exploratory-activities.html#questions-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>What mechanisms would your model include?</li>
+<li>What variables would be tracked?</li>
+<li>How would selection operate?</li>
+<li>How would new information arise?</li>
+<li>How would compartments interact with molecular evolution?</li>
+</ol>
+</div>
+<div id="extension-6" class="section level3 hasAnchor" number="9.8.5">
+<h3><span class="header-section-number">9.8.5</span> Extension<a href="appendix-b-classroom-labs-and-exploratory-activities.html#extension-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Create a flowchart or pseudocode describing the proposed simulation.</p>
+</div>
+</div>
+<div id="assessment-ideas" class="section level2 hasAnchor" number="9.9">
+<h2><span class="header-section-number">9.9</span> Assessment Ideas<a href="appendix-b-classroom-labs-and-exploratory-activities.html#assessment-ideas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Students can be asked to:</p>
+<ol style="list-style-type: decimal">
+<li>Explain parameter choices.</li>
+<li>Compare simulation outputs.</li>
+<li>Interpret graphs and trends.</li>
+<li>Identify model limitations.</li>
+<li>Connect simulations to scientific theories.</li>
+<li>Propose model improvements.</li>
+<li>Design new experiments.</li>
+<li>Critically evaluate competing hypotheses.</li>
+</ol>
+</div>
+<div id="suggested-capstone-project" class="section level2 hasAnchor" number="9.10">
+<h2><span class="header-section-number">9.10</span> Suggested Capstone Project<a href="appendix-b-classroom-labs-and-exploratory-activities.html#suggested-capstone-project" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Students can select one major origin-of-life framework and investigate it in depth.</p>
+<p>Possible projects include:</p>
+<ul>
+<li>RNA World simulations</li>
+<li>Protocell evolution</li>
+<li>Autocatalytic networks</li>
+<li>Diversity and complexity</li>
+<li>Hybrid origin-of-life models</li>
+</ul>
+<p>The project should include:</p>
+<ul>
+<li>Background research</li>
+<li>Simulation experiments</li>
+<li>Data analysis</li>
+<li>Interpretation</li>
+<li>Discussion of limitations</li>
+<li>Recommendations for future work</li>
+</ul>
+</div>
+<div id="key-takeaways-6" class="section level2 hasAnchor" number="9.11">
+<h2><span class="header-section-number">9.11</span> Key Takeaways<a href="appendix-b-classroom-labs-and-exploratory-activities.html#key-takeaways-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Scientific understanding develops through experimentation.</li>
+<li>Simple models can reveal important principles.</li>
+<li>Mutation, selection, diversity, networks, and compartments interact in complex ways.</li>
+<li>No single simulation explains the origin of life.</li>
+<li>Comparing models helps reveal strengths and limitations.</li>
+<li>The origin of life remains one of the most fascinating open questions in science.</li>
+<li><code>lifesimulatoR</code> provides a platform for exploring these ideas through computational experiments.</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="appendix-a-package-function-reference.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="appendix-c-installation-and-quick-start-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": true,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
